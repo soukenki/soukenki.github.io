@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>はじめまして</title>
+    <url>/2022/11/17/%E3%81%AF%E3%81%98%E3%82%81%E3%81%BE%E3%81%97%E3%81%A6/</url>
+    <content><![CDATA[<h2 id="目次"><a href="#目次" class="headerlink" title="目次"></a>目次</h2><ul>
+<li>自己紹介</li>
+<li>目標</li>
+<li>興味など</li>
+<li>ソースコード庫</li>
+</ul>
+<span id="more"></span>
+
+
+<h1 id="自己紹介"><a href="#自己紹介" class="headerlink" title="自己紹介"></a>自己紹介</h1><p>こんにちは。<br>ソウ　ケンキと申します。<br>このブログは、自分としてIT技術の理解や活用など情報をまとめるモノです。</p>
+<p>今日本の大学で情報について、様々な知識を勉強しています。<br>主に、C&#x2F;C++・Linuxなどの学習をやっています。</p>
+<p>私の性格は楽観的で明るいです。趣味は旅行、グルメ、音楽、釣りなどです。若し、皆さんは私のブログに対して、何かアドバイスや質問があれば、ぜひメール・LineやWeChatで連絡してください。  
+　　
+　</p>
+<h1 id="目標"><a href="#目標" class="headerlink" title="目標"></a>目標</h1><p>一生懸命に勉強して、様々な知識を身につけるようになります。将来的には社会に役立つ、人々の生活を変えながら、生活をより便利にする製品を開発することができるように目指しています。</p>
+<h2 id="掲示板"><a href="#掲示板" class="headerlink" title="掲示板"></a>掲示板</h2><p>最後に、自分の興味として旅行や美食などの写真シェアを掲示します。<br>    <img src="/images/lvxing_1.png"></p>
+<ul>
+<li><p>瑞龍寺  </p>
+<p> <img src="/images/lvxing_1_1.png"></p>
+</li>
+<li><p>高岡大佛  </p>
+<p>  <img src="/images/food_1.png"></p>
+</li>
+<li><p>和牛ステーキ</p>
+</li>
+</ul>
+<h2 id="ソースコード庫"><a href="#ソースコード庫" class="headerlink" title="ソースコード庫"></a>ソースコード庫</h2><ul>
+<li><a href="https://github.com/soukenki">https://github.com/soukenki</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>日本語</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>初次见面，我的第一篇文章</title>
+    <url>/2022/11/19/%E5%88%9D%E6%AC%A1%E8%A7%81%E9%9D%A2%EF%BC%8C%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
+<li>自我介绍</li>
+<li>目标</li>
+<li>分享</li>
+<li>我的代码库</li>
+</ul>
+<span id="more"></span>
+
+
+<h1 id="自我介绍"><a href="#自我介绍" class="headerlink" title="自我介绍"></a>自我介绍</h1><p>大家好，我叫曹建熙。<br>这是我的个人博客，我会在这里分享我学习代码时的理解和心得。  </p>
+<p>现在是在日本的留学生，学习计算机知识。<br>性格乐观开朗，爱好是旅行、美食、音乐、钓鱼等。    </p>
+<p>大家如果有什么建议或者疑问，都可以通过邮件、微信或者line联系我。  </p>
+<h1 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h1><p>活到老学到老，希望自己可以一直坚持学习。<br>不断提高自己的技术水平，向大牛们学习。    </p>
+<h2 id="分享"><a href="#分享" class="headerlink" title="分享"></a>分享</h2><p>最后分享一些旅行和美食的照片。<br>    <img src="/images/lvxing_1.png"></p>
+<ul>
+<li><p>瑞龙寺  </p>
+<p> <img src="/images/lvxing_1_1.png"></p>
+</li>
+<li><p>高冈大佛  </p>
+<p>  <img src="/images/food_1.png"></p>
+</li>
+<li><p>和牛牛排</p>
+</li>
+</ul>
+<h2 id="我的代码库"><a href="#我的代码库" class="headerlink" title="我的代码库"></a>我的代码库</h2><ul>
+<li><a href="https://github.com/soukenki">https://github.com/soukenki</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>中文</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>我与C语言的初次见面</title>
+    <url>/2022/11/22/%E6%88%91%E4%B8%8EC%E8%AF%AD%E8%A8%80%E7%9A%84%E5%88%9D%E6%AC%A1%E8%A7%81%E9%9D%A2/</url>
+    <content><![CDATA[<p>  <strong>关于本文章</strong>，是我第一次接触C的时候，大概了解到的一个框架。比如，本文中的循环只简单介绍了while，后面我会更新发布专门针对各种各样关于不同循环的文章。感兴趣的话，请持续关注我的更新~</p>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
+<li>我的第一个C代码</li>
+<li>数据类型</li>
+<li>实用的函数printf()的形式</li>
+<li>计算机中的单位<span id="more"></span></li>
+<li>变量和常量<ul>
+<li>计算两个数值的和</li>
+<li>变量的作用域</li>
+<li>变量的生命周期</li>
+<li>常量（字面常量）（const修饰的常变量）</li>
+<li>常量（#define定义的标识符常量）</li>
+<li>常量（枚举常量）</li>
+</ul>
+</li>
+<li>字符串<ul>
+<li>计算字符串长度 strlen();</li>
+<li>转义字符<ul>
+<li>‘\ddd’ 8进制</li>
+<li>‘\xdd’ 16进制</li>
+<li>注释</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>选择语句</li>
+<li>循环语句<ul>
+<li>while语句</li>
+</ul>
+</li>
+<li>数组</li>
+<li>操作符<ul>
+<li>算术操作符： + - * &#x2F; %</li>
+<li>移位操作符: &gt;&gt; &lt;&lt;</li>
+<li>位操作符：&amp;按位与、|按位或、^按位异或</li>
+<li>赋值操作符： &#x3D; +&#x3D; -&#x3D; *&#x3D; &#x2F;&#x3D; &amp;&#x3D; ^&#x3D; |&#x3D; &gt;&gt;&#x3D; &lt;&lt;&#x3D;</li>
+<li>单目操作符:  !  +  -  sizeof  ~  ++  –  &amp;  *  (类型)</li>
+<li>关系操作符:  &gt;  &gt;&#x3D;  &lt;  &lt;&#x3D;  !&#x3D;  &#x3D;&#x3D;</li>
+<li>逻辑操作符</li>
+<li>条件操作符（三目操作符）</li>
+<li>逗号表达式</li>
+</ul>
+</li>
+<li>常见关键字</li>
+<li>指针</li>
+<li>结构体</li>
+</ul>
+<h1 id="我的第一个C代码"><a href="#我的第一个C代码" class="headerlink" title="我的第一个C代码"></a>我的第一个C代码</h1><ul>
+<li>.c文件为 C语言源文件 </li>
+<li>.h文件为 头文件</li>
+<li>包含一个叫stdio.h的文件</li>
+<li>std-标准 standard标准 input输入 output输出</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="comment">//int是整型的意思，main前面的int表示main函数调用之后返回整型值</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> <span class="comment">//主函数--&gt;程序入口--&gt;有却只有一个</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="comment">/*</span></span><br><span class="line"><span class="comment">  这里做任务,输入函数</span></span><br><span class="line"><span class="comment">  函数-print function - printf - 打印函数</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;hello 你好\n&quot;</span>); <span class="comment">/*printf是库函数-C语言提供使用的函数</span></span><br><span class="line"><span class="comment">          别人的东西要打招呼(#include 包含的意思-printf作用是输入输出-使用时最开头要被包含)*/</span></span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>; <span class="comment">//0是整数，return是返回</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><p>char        字符数据类型    1          字符初始化: ‘w’     字符串初始化: “Name”    注意符号区分<br>short       短整型        2<br>int         整型          4<br>long        长整型        4或8<br>long long   更长的整型     8<br>float       单精度浮点数   4      使用float初始化数据时，在数据后面加上f，编译器默认为double类型，加f让它为float<br>double      双精度浮点数   8 </p>
+<h1 id="3"><a href="#3" class="headerlink" title="3"></a>3</h1><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://github.com/soukenki">https://github.com/soukenki</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>中文</category>
+      </categories>
+      <tags>
+        <tag>C</tag>
+      </tags>
+  </entry>
+</search>
