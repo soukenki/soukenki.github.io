@@ -20,20 +20,26 @@
     var CONFIG = {"hostname":"soukenki.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":false,"post_header":false,"post_body":"slideDownIn","coll_header":false,"sidebar":false}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="本文章について、私が最初に Cプログラミング に触れたときに学んだフレームワークです。たとえば、この記事のループでは、while を簡単に紹介するだけです。ここまでが記事の前半で、後でさまざまな文法の詳細に特化した記事を更新して投稿します。興味のある方は、引き続きブログの更新に注目してください〜目次 &gt;  最初のCコード データの種類 便利な関数 printf() の形式 コンピュータの単位">
+  <meta name="description" content="本文章については、　Cプログラミング をはじめに学んだ知識のフレームワークです。たとえば、この記事のループでは、while を簡単に紹介するだけです。ここまでが記事の前半で、後でさまざまな文法の詳細に特化した記事を更新して投稿します。興味のある方は、引き続きブログの更新に注目してください〜目次 &gt;  最初のCコード データの種類 便利な関数 printf() の形式 コンピュータの単位 変数">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C言語：初めの紹介-1">
 <meta property="og:url" content="https://soukenki.github.io/2022/11/29/C%E8%A8%80%E8%AA%9E%EF%BC%9A%E5%88%9D%E3%82%81%E3%81%AE%E7%B4%B9%E4%BB%8B-1/index.html">
 <meta property="og:site_name" content="ITノート屋">
-<meta property="og:description" content="本文章について、私が最初に Cプログラミング に触れたときに学んだフレームワークです。たとえば、この記事のループでは、while を簡単に紹介するだけです。ここまでが記事の前半で、後でさまざまな文法の詳細に特化した記事を更新して投稿します。興味のある方は、引き続きブログの更新に注目してください〜目次 &gt;  最初のCコード データの種類 便利な関数 printf() の形式 コンピュータの単位">
+<meta property="og:description" content="本文章については、　Cプログラミング をはじめに学んだ知識のフレームワークです。たとえば、この記事のループでは、while を簡単に紹介するだけです。ここまでが記事の前半で、後でさまざまな文法の詳細に特化した記事を更新して投稿します。興味のある方は、引き続きブログの更新に注目してください〜目次 &gt;  最初のCコード データの種類 便利な関数 printf() の形式 コンピュータの単位 変数">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:image" content="https://soukenki.github.io/images/c/111.png">
+<meta property="og:image" content="https://soukenki.github.io/images/c/c01001.png">
+<meta property="og:image" content="https://soukenki.github.io/images/c/c01002.png">
+<meta property="og:image" content="https://soukenki.github.io/images/c/c01003.png">
+<meta property="og:image" content="https://soukenki.github.io/images/c/c01004.png">
+<meta property="og:image" content="https://soukenki.github.io/images/c/c01005.png">
+<meta property="og:image" content="https://soukenki.github.io/images/c/c01006.png">
+<meta property="og:image" content="https://soukenki.github.io/images/c/c01007.png">
 <meta property="article:published_time" content="2022-11-29T04:58:51.000Z">
-<meta property="article:modified_time" content="2022-11-29T05:14:45.572Z">
+<meta property="article:modified_time" content="2022-12-09T11:16:51.490Z">
 <meta property="article:author" content="Skk">
 <meta property="article:tag" content="C文法">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://soukenki.github.io/images/c/111.png">
+<meta name="twitter:image" content="https://soukenki.github.io/images/c/c01001.png">
 
 <link rel="canonical" href="https://soukenki.github.io/2022/11/29/C%E8%A8%80%E8%AA%9E%EF%BC%9A%E5%88%9D%E3%82%81%E3%81%AE%E7%B4%B9%E4%BB%8B-1/">
 
@@ -220,10 +226,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">投稿日</span>
-              
 
-              <time title="作成日：2022-11-29 13:58:51 / 修正日：14:14:45" itemprop="dateCreated datePublished" datetime="2022-11-29T13:58:51+09:00">2022-11-29</time>
+              <time title="作成日：2022-11-29 13:58:51" itemprop="dateCreated datePublished" datetime="2022-11-29T13:58:51+09:00">2022-11-29</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">編集日</span>
+                <time title="修正日：2022-12-09 20:16:51" itemprop="dateModified" datetime="2022-12-09T20:16:51+09:00">2022-12-09</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -266,7 +278,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><strong>本文章について</strong>、私が最初に Cプログラミング に触れたときに学んだフレームワークです。たとえば、この記事のループでは、while を簡単に紹介するだけです。ここまでが記事の前半で、後でさまざまな文法の詳細に特化した記事を更新して投稿します。興味のある方は、引き続きブログの更新に注目してください〜<br><strong>目次 &gt;</strong></p>
+        <p><strong>本文章については</strong>、　Cプログラミング をはじめに学んだ知識のフレームワークです。たとえば、この記事のループでは、while を簡単に紹介するだけです。ここまでが記事の前半で、後でさまざまな文法の詳細に特化した記事を更新して投稿します。興味のある方は、引き続きブログの更新に注目してください〜<br><strong>目次 &gt;</strong></p>
 <ul>
 <li>最初のCコード</li>
 <li>データの種類</li>
@@ -280,7 +292,7 @@
 <li>定数 (列挙定数)</li>
 </ul>
 </li>
-<li>ストリング<ul>
+<li>文字列<ul>
 <li>文字列の長さを計算する strlen();</li>
 <li>エスケープ文字<ul>
 <li>‘\ddd’ 8 進数</li>
@@ -296,7 +308,15 @@
 <span id="more"></span>
 <br>
 
-<h1 id="1"><a href="#1" class="headerlink" title="1"></a>1</h1><table>
+<h1 id="最初のCコード"><a href="#最初のCコード" class="headerlink" title="最初のCコード"></a>最初のCコード</h1><ul>
+<li>.c ファイルは C 言語のソース ファイルである。</li>
+<li>.h ファイルはヘッダー ファイルである。</li>
+<li>stdio.h というファイルを含める</li>
+<li>std-標準 standard標準 input入力 output出力</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="comment">// int は整数を意味し、main の前の int は、main 関数呼び出しの後に整数値が返されることを意味する。</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> <span class="comment">// メイン関数 --&gt; プログラム エントリ --&gt; 1 つしかない</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="comment">/*</span></span><br><span class="line"><span class="comment">  ここでタスクを実行し、関数を入力する</span></span><br><span class="line"><span class="comment">  関数-print function - printf - は画面に出力関数である</span></span><br><span class="line"><span class="comment">  */</span>  </span><br><span class="line">  </span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;hello こんにちは。\n&quot;</span>); </span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/images/c/c01001.png" alt="結果"><br><br>  </p>
+<h1 id="データの種類"><a href="#データの種類" class="headerlink" title="データの種類"></a>データの種類</h1><table>
 <thead>
 <tr>
 <th align="left">名称</th>
@@ -304,12 +324,364 @@
 <th align="center">サイズ</th>
 </tr>
 </thead>
-</table>
-<p><img src="/images/c/111.png" alt="結果"></p>
-<h1 id="2"><a href="#2" class="headerlink" title="2"></a>2</h1><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">内容</span><br></pre></td></tr></table></figure>
+<tbody><tr>
+<td align="left">char</td>
+<td align="left">文字型</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="left">short</td>
+<td align="left">短整数型</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="left">int</td>
+<td align="left">整数型</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="left">long</td>
+<td align="left">長整数型</td>
+<td align="center">4 または 8</td>
+</tr>
+<tr>
+<td align="left">long long</td>
+<td align="left">もっと長整数型</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="left">float</td>
+<td align="left">単精度浮動小数点数</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="left">double</td>
+<td align="left">倍精度浮動小数点数</td>
+<td align="center">8</td>
+</tr>
+</tbody></table>
+<p>float を使用してデータを初期化する場合、データの後に f を追加すると、コンパイラはデフォルトで double 型になり、f を追加して float にする <br><br>文字の初期化: ‘w’ 文字列の初期化: “Name” → 記号の区別に注意</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">        <span class="type">char</span> ch = <span class="string">&#x27;A&#x27;</span>;         <span class="comment">//char--字符类型</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%c\n&quot;</span>,ch);     <span class="comment">// %c--データを文字形式で出力 \n -- 改行を意味する</span></span><br><span class="line">        <span class="comment">/* %f--浮動小数点数 (10 進数) を出力する</span></span><br><span class="line"><span class="comment">           %p--メモリアドレスの形式で出力</span></span><br><span class="line"><span class="comment">           %x--16 進数を出力</span></span><br><span class="line"><span class="comment">           %o....*/</span></span><br><span class="line">        <span class="comment">//short int   //短整数型</span></span><br><span class="line">        <span class="type">int</span> age = <span class="number">20</span>;           <span class="comment">//整数型</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, age);    <span class="comment">// %d--整数の 10 進データを出力する</span></span><br><span class="line">        <span class="comment">//long 長整数型 </span></span><br><span class="line">        <span class="type">long</span>  nom = <span class="number">11100</span>;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, nom);</span><br><span class="line">        </span><br><span class="line">        <span class="type">float</span> f = <span class="number">5.2</span>;     <span class="comment">//単精度浮動小数点数</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%f\n&quot;</span>, f);</span><br><span class="line">        </span><br><span class="line">        <span class="type">double</span> d = <span class="number">3.14</span>;    <span class="comment">//倍精度浮動小数点数</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%lf\n&quot;</span>, d);<span class="comment">//倍精度浮動小数点数を出力する場合、%f を使用すると精度が失われる可能性があるため、%lf を使用する方が適切である</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment">//sizeof は括弧内のもののサイズを計算するために使用される</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, <span class="keyword">sizeof</span>(<span class="type">char</span>)); <span class="comment">//1</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, <span class="keyword">sizeof</span>(<span class="type">short</span>));<span class="comment">//2</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, <span class="keyword">sizeof</span>(<span class="type">int</span>));<span class="comment">//4</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, <span class="keyword">sizeof</span>(<span class="type">long</span>));<span class="comment">// 4/8 C言語標準 sizeof(long) &gt; または = sizeof(int) は問題ない, 4=4 8&gt;4</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, <span class="keyword">sizeof</span>(<span class="type">long</span> <span class="type">long</span>));<span class="comment">//8</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, <span class="keyword">sizeof</span>(<span class="type">float</span>));<span class="comment">//4</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, <span class="keyword">sizeof</span>(<span class="type">double</span>));<span class="comment">//8</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/images/c/c01002.png" alt="运行结果"><br><br>  </p>
+<h1 id="便利な関数-printf-の形式"><a href="#便利な関数-printf-の形式" class="headerlink" title="便利な関数 printf() の形式"></a>便利な関数 printf() の形式</h1><ol>
+<li>タイプ</li>
+<li>ロゴ</li>
+<li>出力最小幅</li>
+<li>精度</li>
+<li>長さ<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%02d&quot;</span>, x); <span class="comment">//2桁になるように0を埋める 出力：09 </span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%3d&quot;</span>, x); <span class="comment">//スペースを埋めて3桁にする 出力：スペーススペース9</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>1) タイプ</strong></th>
+<th align="left"><strong>タイプ文字は、出力データのタイプを示すために使用され、その形式と意味を次の表に示します。</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">%d</td>
+<td align="left">符号付き整数を 10 進形式で出力します (正の数は符号を出力しません); 補数コードが %d で出力される場合、元のコードを計算して出力する必要があります</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">printf(“%8d\n”,100); printf(“%6d\n”,100); printf(“%-8d\n”,100); printf(“%+8\n”,100 );</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">出力は次のとおりです。 “+” 右揃え</td>
+</tr>
+<tr>
+<td align="left">%llu</td>
+<td align="left">longlong unsigned 型を出力 (64 ビット プラットフォームが %d を出力する場合)</td>
+</tr>
+<tr>
+<td align="left">%ld</td>
+<td align="left">長整数出力</td>
+</tr>
+<tr>
+<td align="left">%o</td>
+<td align="left">符号なし整数を 8 進数形式で出力します (プレフィックス 0 は出力しません)</td>
+</tr>
+<tr>
+<td align="left">%x</td>
+<td align="left">整数を 16 進数の形式で出力するか、文字列のアドレスを出力します (数値のみを出力します。0x1234 などの形式で出力したい場合は、この形式で出力するには %#x が必要です)</td>
+</tr>
+<tr>
+<td align="left">%u</td>
+<td align="left">符号なし型データ (符号なし数値) を 10 進数で出力します。 注: %d と %u には符号なしの値の範囲、つまり制限値があります。そうしないと、値が正しく出力されません。</td>
+</tr>
+<tr>
+<td align="left">%c</td>
+<td align="left">文字を出力</td>
+</tr>
+<tr>
+<td align="left">%s</td>
+<td align="left">文字列を出力</td>
+</tr>
+<tr>
+<td align="left">%f</td>
+<td align="left">実数を 10 進形式で出力、デフォルトでは小数点以下 6 桁、%.2f を使用すると小数点以下 2 桁を確保 (同様に 1~6) c &#x3D; (float)a &#x2F; b ;&#x2F;&#x2F;ここで強制型変換、フォームの結果を省略せず、小数点以下の数字を表示する</td>
+</tr>
+<tr>
+<td align="left">%lf</td>
+<td align="left">倍精度浮動小数点数の場合、%f を使用すると精度が失われる可能性があるため、%lf</td>
+</tr>
+<tr>
+<td align="left">%100f</td>
+<td align="left">小数点以下 100 桁の実数を出力します。</td>
+</tr>
+<tr>
+<td align="left">%e</td>
+<td align="left">数値形式で実数を出力</td>
+</tr>
+<tr>
+<td align="left">%</td>
+<td align="left">サイズに応じて f 形式または e 形式を自動的に選択し、無意味なゼロを出力しない</td>
+</tr>
+<tr>
+<td align="left">%p</td>
+<td align="left">印刷アドレス</td>
+</tr>
+<tr>
+<td align="left"><strong>2) フラグ</strong></td>
+<td align="left"><strong>フラグ文字は、-、+、#、およびスペースであり、その意味は次の表に示されています:</strong></td>
+</tr>
+<tr>
+<td align="left">-</td>
+<td align="left">結果を左揃え、右にスペースを埋める</td>
+</tr>
+<tr>
+<td align="left">+</td>
+<td align="left">出力記号 (プラスまたはマイナス記号)</td>
+</tr>
+<tr>
+<td align="left">スペース</td>
+<td align="left">正の場合は出力値の前にスペースが、負の場合はマイナス記号が先行します。</td>
+</tr>
+<tr>
+<td align="left">#</td>
+<td align="left">クラス c、s、d、u には影響しません;</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">クラス o の場合、出力時にプレフィックス 0 を付けます。</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">クラス x の場合、出力時にプレフィックス 0x を付けます。</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">e、g、f クラスの場合、結果に小数点がある場合にのみ小数点が与えられます</td>
+</tr>
+<tr>
+<td align="left"><strong>3) 出力の最小幅</strong></td>
+<td align="left"><strong>出力の最小桁数を示すために 10 進整数が使用されます。 実際の桁数が定義幅よりも多い場合は、実際の桁数に応じて出力され、実際の桁数が定義幅よりも小さい場合は、スペースまたは 0 で埋められます。</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>4) 精度</strong></td>
+<td align="left"><strong>精度形式指定子は “.” で始まり、その後に 10 進整数が続きます。 この項目の意味: 出力が数値の場合は小数点以下の桁数を示し、出力が文字の場合は出力文字数を示し、実際の桁数が定義された精度の数値よりも大きい場合は、 、余分な部分は切り捨てられます。</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>5) 長さ</strong></td>
+<td align="left"><strong>長さの書式指定子は h と l です.h は短整数として出力することを意味し、l は長整数として出力することを意味します.</strong></td>
+</tr>
+</tbody></table>
+<br>  
 
+<h1 id="コンピュータの単位"><a href="#コンピュータの単位" class="headerlink" title="コンピュータの単位"></a>コンピュータの単位</h1><ul>
+<li><p>2 バイト — 16 ビット 2^16-1</p>
+<ul>
+<li>4 バイト — 32 ビット 2^32-1</li>
+</ul>
+</li>
+<li><p>ビット — ビット最小、1 ビットは 1 または 0 の 1 つだけを保持できます</p>
+</li>
+<li><p>バイト — バイト 1 バイト &#x3D; 8 ビットのサイズ。</p>
+<ul>
+<li>kb — 1024 バイト</li>
+<li>mb — 1024kb</li>
+<li>gb—1024mb</li>
+<li>tb — 1024 GB</li>
+<li>正電荷 — 1</li>
+<li>負電荷 — 0</li>
+</ul>
+<p>　　
+  </p>
+</li>
+<li><p>バイナリ: (0 と 1 のみ)　　</p>
+</li>
+<li><p>10 進法: 0123456789 日常の数字</p>
+</li>
+<li><p>16 進数: 時間 (1 サイクル 12 時間)</p>
+</li>
+<li><p>16 進数: 1 週間 (1 サイクル 7 日)</p>
+</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">        <span class="type">short</span> age = <span class="number">20</span>;<span class="comment">//メモリに 2 バイトを適用 = 16 ビットで 20 の値を格納</span></span><br><span class="line">        <span class="type">float</span> weight = <span class="number">95.6f</span>;<span class="comment">//メモリに 4 バイトを適用し、10 進数を格納し、値の後に f を追加して 95.6 を指定します。この値は float 型である</span></span><br><span class="line">        <span class="type">char</span> ch = <span class="string">&#x27;w&#x27;</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>  
 
-<h1 id="3"><a href="#3" class="headerlink" title="3"></a>3</h1><h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><ul>
+<h1 id="変数と定数"><a href="#変数と定数" class="headerlink" title="変数と定数"></a>変数と定数</h1><ul>
+<li>定数：学籍番号、ID番号…定数値</li>
+<li>変数: 年齢、体重…変数値、C 言語には 2 つの異なるタイプの変数がある (<em><strong>ローカル変数、グローバル変数</strong></em>)</li>
+</ul>
+<figure class="highlight c"><figcaption><span>変数</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> num1 = <span class="number">20</span>;<span class="comment">//グローバル変数-コードブロック&#123;&#125;以外の変数を定義します。</span></span><br><span class="line"><span class="type">int</span> num2; <span class="comment">//グローバル変数を初期化しないと、デフォルトは0に初期化されます。</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">        <span class="type">int</span> num1 = <span class="number">10</span>;<span class="comment">//ローカル変数 - コード ブロック内で定義された変数 &#123;&#125;; 名前が同じ場合、この行を削除してグローバル変数を直接表示します</span></span><br><span class="line">        <span class="type">int</span> a; <span class="comment">//ローカル変数が初期化されていない場合、デフォルトでランダムな値になります</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, num1);<span class="comment">//ローカル変数とグローバル変数の名前はできるだけ同じにしないでください。誤解しやすく、バグの原因となります。</span></span><br><span class="line">                         <span class="comment">//ローカル変数とグローバル変数が同じ名前の場合、ローカル変数が最初に表示されます。</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/images/c/c01003.png" alt="結果"></p>
+<br>  
+
+<h2 id="2つの数値の合計を計算する"><a href="#2つの数値の合計を計算する" class="headerlink" title="2つの数値の合計を計算する"></a>2つの数値の合計を計算する</h2><ul>
+<li>scanf 関数に関するエラーの報告</li>
+<li>プロジェクトの先頭に追加:　#define _CRT_SECURE_NO_WARNINGS 1　　<br><img src="/images/c/c01004.png" alt="結果"><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> _CRT_SECURE_NO_WARNINGS 1</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">        <span class="type">int</span> num1 = <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> num2 = <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> sum = <span class="number">0</span>;   <span class="comment">//C 言語の文法では、変数は現在のコード ブロックの先頭で定義する必要があると規定されています</span></span><br><span class="line">         <span class="comment">/* 入力データ - 入力関数 scanf を使用</span></span><br><span class="line"><span class="comment">         vs2019 に (_s) を追加</span></span><br><span class="line"><span class="comment">         scanf_s() の機能は scanf() と同じですが、scanf() よりも安全です。</span></span><br><span class="line"><span class="comment">         scanf_s() は、「scanf() が文字列を読み取るときに境界をチェックしないため、メモリ リークが発生する可能性がある」という問題のために設計されているためです。</span></span><br><span class="line"><span class="comment">         scanf_s() を使用して文字列を読み取る場合、オーバーフローを防ぐために読み取る最大文字数を示す数値を指定する必要があります。</span></span><br><span class="line"><span class="comment">         [scanf_s()] これはvsにしか使えない、他のソフトは非対応、クロスプラットフォームがないので使わないようにして、</span></span><br><span class="line"><span class="comment">         コンパイラがエラーを報告しないように、ソース ファイルの先頭に #define _CRT_SECURE_NO_WARNINGS 1 を追加します*/</span></span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>,&amp;num1,&amp;num2);<span class="comment">//アドレス シンボル &amp; scanf によって入力された値が大きすぎる場合でも、メモリに強制的に格納され、オーバーフローが発生します。</span></span><br><span class="line">        sum = num1 + num2;       <span class="comment">//scanf は、ターゲット スペースが収まるかどうかは気にしません。</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;sum=%d\n&quot;</span>, sum);<span class="comment">//%d の前の (sum=) がデバッグに表示されます</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>　　<br>while(scanf(“%d”,&amp;a) &#x3D;&#x3D; 1) &#x2F;&#x2F;scanf が入力情報を正常に読み取った場合、戻り値は 1; 入力情報を読み取ることができなかった場合、戻り値は EOF EOF 値は -1　　</p>
+<p>while(scanf(“%d”,&amp;a) !&#x3D; EOF) プログラムを終了するには、ctrl + z を押します</p>
+<br>  
+
+<h2 id="変数のスコープ"><a href="#変数のスコープ" class="headerlink" title="変数のスコープ"></a>変数のスコープ</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> global = <span class="number">2020</span>;<span class="comment">// グローバル変数のスコープはプロジェクト全体</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">test</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;test()--%d\n&quot;</span>, global);<span class="comment">// ここでは実行せず、宣言するだけです</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">        &#123;</span><br><span class="line">               <span class="type">int</span> num = <span class="number">0</span>;  <span class="comment">// ローカル変数のスコープは、ローカル変数が &#123;&#125; でのみ機能することです</span></span><br><span class="line">               <span class="built_in">printf</span>(<span class="string">&quot;num=%d\n&quot;</span>, num);<span class="comment">//　printf(&quot;num=%d\n&quot;, num); を変数 int num = 0; の &#123;&#125; の外に移動すると動作しません</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;global=%d\n&quot;</span>, global);</span><br><span class="line">        test();<span class="comment">//mainでvoid関数が呼ばれるので実行される</span></span><br><span class="line">         <span class="comment">//同じプロジェクトで、異なるソース ファイルにグローバル変数 int g_val = 2021 があります。</span></span><br><span class="line">         <span class="comment">//extern外部シンボル(他のソースファイルのグローバル変数)の宣言</span></span><br><span class="line">        <span class="keyword">extern</span> <span class="type">int</span> g_val;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;g_val=%d\n&quot;</span>, g_val);  <span class="comment">//このときg_val=2021と表示されます</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>  
+
+<h2 id="変数のライフサイクル"><a href="#変数のライフサイクル" class="headerlink" title="変数のライフサイクル"></a>変数のライフサイクル</h2><p><em>ローカル変数のライフサイクルは {} にありますが、グローバル変数のライフサイクルはプログラム全体のライフサイクルです</em></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">        &#123;<span class="comment">// ライフサイクルの開始</span></span><br><span class="line">               <span class="type">int</span> a = <span class="number">10</span>;</span><br><span class="line">               <span class="built_in">printf</span>(<span class="string">&quot;a=%d\n&quot;</span>, a);<span class="comment">//ok  </span></span><br><span class="line">        &#125;<span class="comment">// ライフサイクルの終わり</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;a=%d\n&quot;</span>, a);<span class="comment">//エラー</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>  
+
+<h2 id="定数-リテラル定数-const-修飾された定数変数"><a href="#定数-リテラル定数-const-修飾された定数変数" class="headerlink" title="定数 (リテラル定数) (const 修飾された定数変数)"></a>定数 (リテラル定数) (const 修飾された定数変数)</h2><p>const - 定数プロパティ</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">        <span class="comment">//const-constant プロパティ、</span></span><br><span class="line">        <span class="comment">//const int n = 10;//n は変数ですが、定数属性を持っているため、n は定数変数であると言えます</span></span><br><span class="line">        <span class="comment">//int arr[10] = &#123; 0 &#125;;//配列 [] は定数値を使用して実行する必要があり、定数変数に置き換えることはできません</span></span><br><span class="line">        </span><br><span class="line">        <span class="type">const</span> <span class="type">int</span> num = <span class="number">4</span>;<span class="comment">//int num は num を 4 として定義します。これは変数に属し、前に const が追加され、const によって変更された定数変数になります。</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,num);</span><br><span class="line">        num = <span class="number">8</span>;<span class="comment">//前の int num=4 は変数であり、実行できます。 ただし、const を追加して定数変数にする場合、num=8 はエラーになります。</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, num);</span><br><span class="line">        <span class="number">3</span>;<span class="comment">// リテラル定数</span></span><br><span class="line">        <span class="number">3.14</span>;<span class="comment">// リテラル定数</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>  
+
+<h2 id="定数（-defineで定義される識別子定数）"><a href="#定数（-defineで定義される識別子定数）" class="headerlink" title="定数（#defineで定義される識別子定数）"></a>定数（#defineで定義される識別子定数）</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line">              <span class="comment">//#define 定義済み識別子定数 (マクロ定義を定義)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> MAX 10 <span class="comment">// MAX という定数シンボルを定義し、次の 10 は 10 として定義されていることを意味します</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">        <span class="type">int</span> arr[MAX] = &#123;<span class="number">0</span>&#125;;<span class="comment">// definer で定義した定数を配列[]で使用可能</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, MAX); <span class="comment">// 出力：10</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>  
+
+<h2 id="定数-列挙定数"><a href="#定数-列挙定数" class="headerlink" title="定数 (列挙定数)"></a>定数 (列挙定数)</h2><figure class="highlight c"><figcaption><span>（例1：）</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 列挙定数</span></span><br><span class="line"><span class="comment">// 列挙 - 1 つずつリストします (性別: 男性、女性、内密。三原色: 赤、黄、青。)</span></span><br><span class="line"><span class="comment">// 列挙キーワード - enum</span></span><br><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">Sex</span>           //性別:</span> 男性、女性、内密。</span><br><span class="line">&#123;</span><br><span class="line">        MALE,</span><br><span class="line">        FEMALE,</span><br><span class="line">        SECRET</span><br><span class="line">&#125;;               <span class="comment">//MALE,FEMALE,SECRETこれらの 3 つの値 - 列挙定数</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">        <span class="comment">//enum Sex s = MALE;//sという人は男性です</span></span><br><span class="line">        <span class="class"><span class="keyword">enum</span> <span class="title">Sex</span> <span class="title">s</span> =</span> MALE;<span class="comment">//列挙値は設定値のみを取ることができます: MALE、FEMALE、SECRET のいずれか 1 つだけ</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, MALE);<span class="comment">//列挙定数には値があり、デフォルトの順序は 0、1、2... で、変更できません</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, FEMALE);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, SECRET);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/images/c/c01005.png" alt="运行结果"></p>
+<figure class="highlight c"><figcaption><span>（例2：）</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">Color</span>  //三原色:</span> 赤、黄、青。</span><br><span class="line">&#123;</span><br><span class="line">        RED,</span><br><span class="line">        YELLOW,</span><br><span class="line">        BLUE</span><br><span class="line">&#125;;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">        <span class="class"><span class="keyword">enum</span> <span class="title">Color</span> <span class="title">color</span> =</span> BLUE;<span class="comment">// color という名前の色は青 BLUE</span></span><br><span class="line">        color = YELLOW;<span class="comment">//この色は単なるアイテムの名前であり、変数であり、変更できます</span></span><br><span class="line">        <span class="comment">//BLUE = 6;//これは列挙型で定義された定数で、デフォルトでは 0, 1, 2 でなければなりません... 色自体は変更できないため、エラー</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>  
+
+<h1 id="文字列"><a href="#文字列" class="headerlink" title="文字列"></a>文字列</h1><p>文字列 — “”で囲まれた文字<br>‘\0’ — エスケープ文字 — 0</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span>                  <span class="comment">// 0-数字0</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>                        <span class="comment">// &#x27;0&#x27; --&gt; 文字 0、ASCII 値: 48</span></span><br><span class="line">&#123;</span><br><span class="line">        <span class="type">char</span> arr1[] = <span class="string">&quot;abc&quot;</span>;<span class="comment">//配列</span></span><br><span class="line">        <span class="comment">//　&quot;abc&quot; は &#x27;a&#x27;&#x27;b&#x27;&#x27;c&#x27;&#x27;\0&#x27;------&#x27;\0&#x27; 文字列終了マークと同等です</span></span><br><span class="line">        <span class="type">char</span> arr2[] = &#123; <span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>,<span class="string">&#x27;c&#x27;</span>,<span class="string">&#x27;\0&#x27;</span>&#125;;</span><br><span class="line">        <span class="comment">// &#123;&#x27;a&#x27;,&#x27;b&#x27;,&#x27;c&#x27;&#125; には &#x27;a&#x27;&#x27;b&#x27;&#x27;c&#x27; のみがあり、終了記号はありません。 そのため、&#123;&#125; を使用して文字列を入力する場合は、文字の終わりを意味する &#x27;\0&#x27; または 0 を追加する必要があります。</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%s\n&quot;</span>, arr1);<span class="comment">//　%s で文字列を出力</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%s\n&quot;</span>, arr2);<span class="comment">//　\0 が見つからない場合は、逆方向に読み取り続け、エラーが発生します。</span></span><br><span class="line">        <span class="string">&quot;hello bit&quot;</span>;</span><br><span class="line">        <span class="string">&quot;&quot;</span>;<span class="comment">//　空の文字列</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="comment">// データがコンピュータに保存されるときは、バイナリで保存されます</span></span><br><span class="line">         <span class="comment">// 各文字には対応する値があります #aA$hud... 例: a-97 A-65 \0-0 ...</span></span><br><span class="line">         <span class="comment">// ASCII エンコード、各文字には ASCII コードがあります</span></span><br><span class="line">         <span class="comment">// ASCII コード値、各 ASCII コードに対応する値</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/images/c/c01006.png" alt="結果"><br><br>  </p>
+<h2 id="文字列の長さを計算する-strlen"><a href="#文字列の長さを計算する-strlen" class="headerlink" title="文字列の長さを計算する strlen();"></a>文字列の長さを計算する strlen();</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;string.h&gt;</span> <span class="comment">//strlen関数のヘッダファイル（長さ計算用ヘッダファイル）</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">        <span class="type">char</span> arr1[] = <span class="string">&quot;abc&quot;</span>;<span class="comment">//長さ：3</span></span><br><span class="line">        <span class="type">char</span> arr2[] = &#123; <span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>,<span class="string">&#x27;c&#x27;</span>&#125;;<span class="comment">//長さ：\0 がない場合、結果はランダムな値になります。&#x27;\0&#x27; を追加すると、長さは 3 になります。</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, <span class="built_in">strlen</span>(arr1));<span class="comment">//strlen - string length - 文字列の長さを計算するために使用されます</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, <span class="built_in">strlen</span>(arr2));</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/images/c/c01007.png" alt="結果"></p>
+<ul>
+<li>ここの \0 はエスケープ文字です。つまり、文字の前に「\」を追加して、文字の本来の意味を変更します。</li>
+<li>例: ‘\n’ - リテラルの ‘n’ から ‘改行’ の意味へ、<ul>
+<li>‘\t’ –&gt; ‘水平タブ’,</li>
+<li>‘\r’ –&gt; ‘Enter’ …..</li>
+</ul>
+</li>
+</ul>
+<p><em><strong>(詳しくは下記のエスケープ文字ルール表をご覧ください)</strong></em><br><br>  </p>
+<h2 id="エスケープ文字"><a href="#エスケープ文字" class="headerlink" title="エスケープ文字"></a>エスケープ文字</h2><table>
+<thead>
+<tr>
+<th align="left">エスケープ文字</th>
+<th align="left">意味</th>
+<th align="left">ASCII コード値 (10 進数)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">\a</td>
+<td align="left">ベル (BEL)、警告文字</td>
+<td align="left">007</td>
+</tr>
+<tr>
+<td align="left">\b</td>
+<td align="left">バックスペース (BS)、現在位置を前の列に移動</td>
+<td align="left">008</td>
+</tr>
+<tr>
+<td align="left">\f</td>
+<td align="left">フォーム フィード (FF)、現在の位置を次のページの先頭に移動</td>
+<td align="left">012</td>
+</tr>
+<tr>
+<td align="left">\n</td>
+<td align="left">改行 (LF)、現在位置を次の行の先頭に移動</td>
+<td align="left">010</td>
+</tr>
+<tr>
+<td align="left">\r</td>
+<td align="left">キャリッジ リターン (CR)、現在位置を行頭に移動</td>
+<td align="left">013</td>
+</tr>
+<tr>
+<td align="left">\t</td>
+<td align="left">水平タブ (HT) (次のタブ位置にジャンプ)</td>
+<td align="left">009</td>
+</tr>
+<tr>
+<td align="left">\v</td>
+<td align="left">垂直タブ (VT)</td>
+<td align="left">011</td>
+</tr>
+<tr>
+<td align="left">\\</td>
+<td align="left">はバックスラッシュ文字 ‘ \‘ を表します</td>
+<td align="left">092</td>
+</tr>
+<tr>
+<td align="left">\‘</td>
+<td align="left">は一重引用符 (アポストロフィ) 文字を表します</td>
+<td align="left">039</td>
+</tr>
+<tr>
+<td align="left">\“</td>
+<td align="left">は二重引用符を表します</td>
+<td align="left">034</td>
+</tr>
+<tr>
+<td align="left">\?</td>
+<td align="left">疑問符を表すため、3 文字の単語として認識されません (are you ok??)&#x3D;&gt;(are you ok] ??) &#x3D;&gt; ]</td>
+<td align="left">063</td>
+</tr>
+<tr>
+<td align="left">\0</td>
+<td align="left">ヌル文字 (NUL)</td>
+<td align="left">000</td>
+</tr>
+<tr>
+<td align="left">\ddd</td>
+<td align="left">ddd は 1~3 の 8 進数</td>
+<td align="left">3 桁の 8 進数</td>
+</tr>
+<tr>
+<td align="left">\xdd</td>
+<td align="left">dd は 2 桁の 16 進数を意味します</td>
+<td align="left">16 進数</td>
+</tr>
+</tbody></table>
+<figure class="highlight c"><figcaption><span>例：</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;c:\\2013\\music\\zhou.mp3&quot;</span>);<span class="comment">//システムが「\」をエスケープ文字として解釈しないようにするには、「\」を「\\」と記述します。</span></span><br><span class="line">        <span class="comment">//このとき得られる結果は c:\2013\music\zhou.mp3 のようなアドレスです</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%c\n&quot;</span>, <span class="string">&#x27;\&#x27;&#x27;</span>);<span class="comment">//同様に、&#x27;--&gt;\&#x27; を使用して記号を表示できます&#x27;</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%s\n&quot;</span>, <span class="string">&quot;\&quot;&quot;</span>);<span class="comment">//文字列も同様です</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>  
+
+<h3 id="‘-ddd’-8-進数"><a href="#‘-ddd’-8-進数" class="headerlink" title="‘\ddd’ 8 進数"></a>‘\ddd’ 8 進数</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;string.h&gt;</span>  <span class="comment">//長さを計算するためのヘッダー ファイル</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, <span class="built_in">strlen</span>(<span class="string">&quot;c:\test\32\test.c&quot;</span>));<span class="comment">//長さは 13 ですが、なぜ 13 なのですか? \t は 1 文字として数えます</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%c\n&quot;</span>, <span class="string">&#x27;\32&#x27;</span>);<span class="comment">//「→」を表示</span></span><br><span class="line">        <span class="comment">// \32 -- 32 は 2 つの 8 進数 (8、9 およびその他の 7 を超える値は表示できません) 3*8^1+2*8^0 = 24+2 =26 26 は ASCII コード &#x27;→&#x27;</span></span><br><span class="line">        <span class="comment">// 8 進数として 32 --&gt; 10 進数、10 進数 --&gt; ASCII コード値に対応する文字</span></span><br><span class="line">        <span class="comment">// 32--&gt;10 進数 26-&gt;ASCII コード値で表される文字として</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%c\n&quot;</span>, <span class="string">&#x27;\132&#x27;</span>);<span class="comment">//&#x27;Z&#x27;を表示</span></span><br><span class="line">                           <span class="comment">//  8 進数：\132 --  1*8^2+3*8^1+2*8^0 = 64+24+2 = 90 --&gt; ASCIIコード値は：&#x27;Z&#x27;</span></span><br><span class="line">        <span class="comment">//したがって、\32 は文字 &#x27;→&#x27; です。</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>  
+
+<h3 id="‘-xdd’-16-進数"><a href="#‘-xdd’-16-進数" class="headerlink" title="‘\xdd’ 16 進数"></a>‘\xdd’ 16 進数</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>            <span class="comment">//&#x27;\&#x27; の後ろの数字は数字のみ: 8 進数; &#x27;\x&#x27; と数字の場合: 16 進数。</span></span><br><span class="line">&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%c\n&quot;</span>, <span class="string">&#x27;\x61&#x27;</span>);<span class="comment">//16 進数アルゴリズム：\x61 -- 6*16^1+1*16^0 = 96+1= 97 --&gt; ASCIIコード値は：&#x27;a&#x27;</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;<span class="comment">//16 進数を 10 進数に変更し、対応する ASCII コード値に対応させます。</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>  
+
+<h3 id="ノート"><a href="#ノート" class="headerlink" title="ノート"></a>ノート</h3><ul>
+<li>C言語スタイル: &#x2F;*xxxxxxxx*&#x2F;<ul>
+<li>短所: ネスト (&#x2F;*xxxx&#x2F;*xx*&#x2F;xxxx*&#x2F;) をサポートしていません。後半部分はノートされていません。</li>
+</ul>
+</li>
+<li>C++ スタイル: &#x2F;&#x2F;xxxxxxxxxxx<ul>
+<li>1 行または複数行のノートを付けることができます (推奨)<br></li>
+</ul>
+</li>
+</ul>
+<h1 id="選択文"><a href="#選択文" class="headerlink" title="選択文"></a>選択文</h1><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">        <span class="type">int</span> input = <span class="number">0</span>;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;大学にいる\n&quot;</span>);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;君は努力してるの？入力してください(1,0)&gt;:&quot;</span>);</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;input);     <span class="comment">//入力機能、選択入力 1/0</span></span><br><span class="line">        <span class="keyword">if</span> (<span class="number">1</span> == input)        <span class="comment">//if-場合    1 つの「=」は代入を意味し、2 つの「=」はそれらが等しいかどうかを判断することを意味します。</span></span><br><span class="line">               <span class="built_in">printf</span>(<span class="string">&quot;良いoffer\n&quot;</span>);</span><br><span class="line">        <span class="comment">//else                   //else-他の</span></span><br><span class="line">        <span class="keyword">if</span> (<span class="number">0</span> == input)   <span class="comment">//こいうふうにも使えます</span></span><br><span class="line">               <span class="built_in">printf</span>(<span class="string">&quot;無職\n&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>  
+
+<h1 id="ループ文"><a href="#ループ文" class="headerlink" title="ループ文"></a>ループ文</h1><ol>
+<li>while演算子</li>
+<li>for演算子</li>
+<li>do…while演算子</li>
+</ol>
+<figure class="highlight c"><figcaption><span>while例：</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;大学にいる\n&quot;</span>);</span><br><span class="line">        <span class="type">int</span> line = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (line &lt; <span class="number">20000</span>)</span><br><span class="line">        &#123;</span><br><span class="line">               <span class="built_in">printf</span>(<span class="string">&quot;プログラミングをする量:%d\n&quot;</span>,line);</span><br><span class="line">                       line++;   <span class="comment">//変数の値を 1 増やします。同様に、「--」は値を 1 減らします</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (line &gt;= <span class="number">20000</span>)         <span class="comment">//&gt;または= 20000までループし続ける</span></span><br><span class="line">               <span class="built_in">printf</span>(<span class="string">&quot;良いoffer\n&quot;</span>);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>  
+
+<p>(この文章はまだ終わっていません。引き続き「 C言語：初めの紹介-２」を参照してください)</p>
+<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><ul>
 <li><a target="_blank" rel="noopener" href="https://github.com/soukenki">https://github.com/soukenki</a></li>
 </ul>
 
@@ -333,7 +705,10 @@
     <a href="/2022/11/23/%E3%81%AF%E3%81%98%E3%82%81%E3%81%BE%E3%81%97%E3%81%A6/" rel="prev" title="はじめまして">
       <i class="fa fa-chevron-left"></i> はじめまして
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2022/12/09/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E5%8F%AF%E5%A4%89%E9%95%B7%E9%85%8D%E5%88%97/" rel="next" title="データ構造-可変長配列">
+      データ構造-可変長配列 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -393,7 +768,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1"><span class="nav-number">1.</span> <span class="nav-text">1</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2"><span class="nav-number">2.</span> <span class="nav-text">2</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3"><span class="nav-number">3.</span> <span class="nav-text">3</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="nav-number">4.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9C%80%E5%88%9D%E3%81%AEC%E3%82%B3%E3%83%BC%E3%83%89"><span class="nav-number">1.</span> <span class="nav-text">最初のCコード</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E7%A8%AE%E9%A1%9E"><span class="nav-number">2.</span> <span class="nav-text">データの種類</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BE%BF%E5%88%A9%E3%81%AA%E9%96%A2%E6%95%B0-printf-%E3%81%AE%E5%BD%A2%E5%BC%8F"><span class="nav-number">3.</span> <span class="nav-text">便利な関数 printf() の形式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%81%AE%E5%8D%98%E4%BD%8D"><span class="nav-number">4.</span> <span class="nav-text">コンピュータの単位</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A4%89%E6%95%B0%E3%81%A8%E5%AE%9A%E6%95%B0"><span class="nav-number">5.</span> <span class="nav-text">変数と定数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E3%81%A4%E3%81%AE%E6%95%B0%E5%80%A4%E3%81%AE%E5%90%88%E8%A8%88%E3%82%92%E8%A8%88%E7%AE%97%E3%81%99%E3%82%8B"><span class="nav-number">5.1.</span> <span class="nav-text">2つの数値の合計を計算する</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%89%E6%95%B0%E3%81%AE%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%97"><span class="nav-number">5.2.</span> <span class="nav-text">変数のスコープ</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%89%E6%95%B0%E3%81%AE%E3%83%A9%E3%82%A4%E3%83%95%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB"><span class="nav-number">5.3.</span> <span class="nav-text">変数のライフサイクル</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E6%95%B0-%E3%83%AA%E3%83%86%E3%83%A9%E3%83%AB%E5%AE%9A%E6%95%B0-const-%E4%BF%AE%E9%A3%BE%E3%81%95%E3%82%8C%E3%81%9F%E5%AE%9A%E6%95%B0%E5%A4%89%E6%95%B0"><span class="nav-number">5.4.</span> <span class="nav-text">定数 (リテラル定数) (const 修飾された定数変数)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E6%95%B0%EF%BC%88-define%E3%81%A7%E5%AE%9A%E7%BE%A9%E3%81%95%E3%82%8C%E3%82%8B%E8%AD%98%E5%88%A5%E5%AD%90%E5%AE%9A%E6%95%B0%EF%BC%89"><span class="nav-number">5.5.</span> <span class="nav-text">定数（#defineで定義される識別子定数）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E6%95%B0-%E5%88%97%E6%8C%99%E5%AE%9A%E6%95%B0"><span class="nav-number">5.6.</span> <span class="nav-text">定数 (列挙定数)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E5%88%97"><span class="nav-number">6.</span> <span class="nav-text">文字列</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E5%88%97%E3%81%AE%E9%95%B7%E3%81%95%E3%82%92%E8%A8%88%E7%AE%97%E3%81%99%E3%82%8B-strlen"><span class="nav-number">6.1.</span> <span class="nav-text">文字列の長さを計算する strlen();</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E3%82%A8%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%97%E6%96%87%E5%AD%97"><span class="nav-number">6.2.</span> <span class="nav-text">エスケープ文字</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%80%98-ddd%E2%80%99-8-%E9%80%B2%E6%95%B0"><span class="nav-number">6.2.1.</span> <span class="nav-text">‘\ddd’ 8 進数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%80%98-xdd%E2%80%99-16-%E9%80%B2%E6%95%B0"><span class="nav-number">6.2.2.</span> <span class="nav-text">‘\xdd’ 16 進数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E3%83%8E%E3%83%BC%E3%83%88"><span class="nav-number">6.2.3.</span> <span class="nav-text">ノート</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%81%B8%E6%8A%9E%E6%96%87"><span class="nav-number">7.</span> <span class="nav-text">選択文</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E3%83%AB%E3%83%BC%E3%83%97%E6%96%87"><span class="nav-number">8.</span> <span class="nav-text">ループ文</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="nav-number">9.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -409,19 +784,19 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">ポスト</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">カテゴリ</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">タグ</span></a>
       </div>
   </nav>
@@ -537,13 +912,13 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
       notify     : false,
       appId      : 'VAGKsqYcmiyXFWid9Qxlgrka-MdYXbMMI',
       appKey     : 'fy6zCbjHCd0tom3LqEuK1Hss',
-      placeholder: "コメントはこちら～",
+      placeholder: "コメントを追加...",
       avatar     : 'robohash',
 	  avatar_cdn : 'https://www.gravatar.com/avatar/',
       meta       : guest,
       pageSize   : '10' || 10,
       visitor    : true,
-      lang       : 'en' || 'zh-cn',
+      lang       : 'ja' || 'zh-cn',
       path       : location.pathname,
       recordIP   : false,
       serverURLs : 'https://vagksqyc.api.lncldglobal.com'
