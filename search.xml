@@ -453,6 +453,94 @@
 ]]></content>
   </entry>
   <entry>
+    <title>データ構造-単方向リスト</title>
+    <url>/2022/12/10/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E5%8D%98%E6%96%B9%E5%90%91%E3%83%AA%E3%82%B9%E3%83%88/</url>
+    <content><![CDATA[<p><strong>本文章については</strong>、Cプログラミングで単方向リストを実現し、単方向リストにおける概念や運用などを明らかに述べることである。<br><strong>目次 &gt;</strong></p>
+<ul>
+<li>概念と構造</li>
+<li>単方向リストの実現<ul>
+<li>動的ように要素を生成</li>
+<li>出力関数（テスト用）</li>
+<li>尾にデータを挿入</li>
+<li>ヘッドにデータを挿入</li>
+<li>尾にデータを削除</li>
+<li>ヘッドにデータを削除</li>
+<li>pos位置の後ろにデータを挿入</li>
+<li>pos位置の後ろにデータを削除</li>
+<li>データの検索</li>
+<li>単方向リストの破壊</li>
+</ul>
+</li>
+</ul>
+<span id="more"></span>
+<br>
+
+<h1 id="概念と構造"><a href="#概念と構造" class="headerlink" title="- 概念と構造"></a>- 概念と構造</h1><p>リストとは、配列のようなもので、なかに複数のデータを入れることができますが、リストと配列の違いところもあります。リスト構造のうち、特に要素一つ一つがリンクによって接続されているものを、 「ノード」 と呼びます。</p>
+<p><img src="/images/SSS/SSS02001.png"></p>
+<p>　<br>配列はメモリ内の空間は連続していますが、リストはメモリ内の空間は連続していなくてもかまいません。配列は、ノードにデータがしかありません。一方、リストは、ノードにデータを格納するほかに次のノードのポインタが格納されています。リストは、自分のノード内のポインタを介して次のノードの位置を探します。</p>
+<ul>
+<li>各ノードは 「データ部」 と 「ポインタ部」 の２つから構成されます。</li>
+<li>「ポインタ部」 を辿ることによって次のノードの 「データ部」 にアクセスできます。</li>
+</ul>
+<p>　　</p>
+<figure class="highlight c"><figcaption><span>ノード構造体</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">SListNode</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">	SLTDateType data;  <span class="comment">// データ</span></span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">SListNode</span>* <span class="title">next</span>;</span>　<span class="comment">// 次のノード </span></span><br><span class="line">&#125;SListNode;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h1 id="単方向リストの実現"><a href="#単方向リストの実現" class="headerlink" title="単方向リストの実現"></a>単方向リストの実現</h1><br>
+
+<h2 id="動的ように要素を生成"><a href="#動的ように要素を生成" class="headerlink" title="動的ように要素を生成"></a>動的ように要素を生成</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">SListNode* <span class="title function_">BuySListNode</span><span class="params">(SLTDateType x)</span></span><br><span class="line">&#123;</span><br><span class="line">	SListNode* ret = (SListNode*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(SListNode));</span><br><span class="line">	assert(ret);</span><br><span class="line">	ret-&gt;data = x;</span><br><span class="line">	ret-&gt;next = <span class="literal">NULL</span>;</span><br><span class="line">	<span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="出力関数（テスト用）"><a href="#出力関数（テスト用）" class="headerlink" title="出力関数（テスト用）"></a>出力関数（テスト用）</h2><figure class="highlight c"><figcaption><span>出力関数</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">SListPrint</span><span class="params">(SListNode* plist)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(plist);</span><br><span class="line">	SListNode* tail = plist;</span><br><span class="line">	<span class="keyword">while</span> (tail)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%d-&gt;&quot;</span>, tail-&gt;data);</span><br><span class="line">		tail = tail-&gt;next;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;NULL\n&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="尾にデータを挿入"><a href="#尾にデータを挿入" class="headerlink" title="尾にデータを挿入"></a>尾にデータを挿入</h2><p><img src="/images/SSS/SSS02002.png"></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">SListPushBack</span><span class="params">(SListNode** pplist, SLTDateType x)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(*pplist);</span><br><span class="line">	SListNode* p = BuySListNode(x);</span><br><span class="line">	SListNode* tail = *pplist;</span><br><span class="line">	<span class="keyword">while</span> (tail-&gt;next != <span class="literal">NULL</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		tail = tail-&gt;next;</span><br><span class="line">	&#125;</span><br><span class="line">	tail-&gt;next = p;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="ヘッドにデータを挿入"><a href="#ヘッドにデータを挿入" class="headerlink" title="ヘッドにデータを挿入"></a>ヘッドにデータを挿入</h2><p><img src="/images/SSS/SSS02003.png"></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">SListPushFront</span><span class="params">(SListNode** pplist, SLTDateType x)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(*pplist);</span><br><span class="line">	SListNode* p = BuySListNode(x);</span><br><span class="line">	p-&gt;next = *pplist;</span><br><span class="line">	*pplist = p;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+<h2 id="尾にデータを削除"><a href="#尾にデータを削除" class="headerlink" title="尾にデータを削除"></a>尾にデータを削除</h2><p><img src="/images/SSS/SSS02004.png"></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">SListPopBack</span><span class="params">(SListNode** pplist)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(*pplist);</span><br><span class="line">	<span class="keyword">if</span> ((*pplist)-&gt;next == <span class="literal">NULL</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">free</span>(*pplist);</span><br><span class="line">		*pplist = <span class="literal">NULL</span>;</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	SListNode* tail = *pplist;</span><br><span class="line">	<span class="keyword">while</span> (tail-&gt;next-&gt;next != <span class="literal">NULL</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		tail = tail-&gt;next;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">free</span>(tail-&gt;next);</span><br><span class="line">	tail-&gt;next = <span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="ヘッドにデータを削除"><a href="#ヘッドにデータを削除" class="headerlink" title="ヘッドにデータを削除"></a>ヘッドにデータを削除</h2><p><img src="/images/SSS/SSS02005.png"></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">SListPopFront</span><span class="params">(SListNode** pplist)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(*pplist);</span><br><span class="line">	<span class="keyword">if</span> ((*pplist)-&gt;next == <span class="literal">NULL</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">free</span>(*pplist);</span><br><span class="line">		*pplist = <span class="literal">NULL</span>;</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	SListNode* pre = *pplist;</span><br><span class="line">	*pplist = (*pplist)-&gt;next;</span><br><span class="line">	<span class="built_in">free</span>(pre);</span><br><span class="line">	pre = <span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="pos位置の後ろにデータを挿入"><a href="#pos位置の後ろにデータを挿入" class="headerlink" title="pos位置の後ろにデータを挿入"></a>pos位置の後ろにデータを挿入</h2><p><img src="/images/SSS/SSS02006.png"></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">SListInsertAfter</span><span class="params">(SListNode* pos, SLTDateType x)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(pos);</span><br><span class="line">	</span><br><span class="line">	SListNode* newnode = BuySListNode(x); <span class="comment">// xの値で新しいノードを動的に申請する</span></span><br><span class="line">	SListNode* next = pos-&gt;next;</span><br><span class="line"></span><br><span class="line">	pos-&gt;next = newnode;</span><br><span class="line">	newnode-&gt;next = next;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="pos位置の後ろにデータを削除"><a href="#pos位置の後ろにデータを削除" class="headerlink" title="pos位置の後ろにデータを削除"></a>pos位置の後ろにデータを削除</h2><p><img src="/images/SSS/SSS02007.png"></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">SListEraseAfter</span><span class="params">(SListNode* pos)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(pos);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span> (pos-&gt;next == <span class="literal">NULL</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;posの後ろにデータがない\n&quot;</span>);</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		SListNode* next = pos-&gt;next-&gt;next;</span><br><span class="line">		<span class="built_in">free</span>(pos-&gt;next);</span><br><span class="line">		pos-&gt;next = next;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="データの検索"><a href="#データの検索" class="headerlink" title="データの検索"></a>データの検索</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">SListNode* <span class="title function_">SListFind</span><span class="params">(SListNode* plist, SLTDateType x)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(plist);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">while</span> (plist != <span class="literal">NULL</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (plist-&gt;data == x)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">return</span> plist;</span><br><span class="line">		&#125;</span><br><span class="line">		plist = plist-&gt;next;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="単方向リストの破壊"><a href="#単方向リストの破壊" class="headerlink" title="単方向リストの破壊"></a>単方向リストの破壊</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">SListDestory</span><span class="params">(SListNode* plist)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(plist);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">while</span> (plist) <span class="comment">// plistがNULLの場合は終了</span></span><br><span class="line">	&#123;</span><br><span class="line">		SListNode* next = plist-&gt;next; <span class="comment">// 全ノードをループ解放</span></span><br><span class="line">		<span class="built_in">free</span>(plist);</span><br><span class="line">		plist = next;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;データの破壊が成功した\n&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+
+<p>次の投稿は、単方向リストに基づいて、「双方向循環リスト番兵ノードつけ」というデータ構造である。興味があれば、是非マイgithubをフォローしてくださいね。(笑)</p>
+<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><ul>
+<li><a href="https://github.com/soukenki/Test_for_C/tree/master/test_list">https://github.com/soukenki/Test_for_C/tree/master/test_list</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>データ構造とアルゴリズム</category>
+      </categories>
+      <tags>
+        <tag>C言語</tag>
+        <tag>データ構造とアルゴリズム</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>データ構造-可変長配列</title>
     <url>/2022/12/09/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E5%8F%AF%E5%A4%89%E9%95%B7%E9%85%8D%E5%88%97/</url>
     <content><![CDATA[<p><strong>本文章については</strong>、Cプログラミングで可変長配列を実現し、可変長配列における概念などを明らかに述べることである。<br><strong>目次 &gt;</strong></p>
