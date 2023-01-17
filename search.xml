@@ -665,4 +665,118 @@
         <tag>データ構造とアルゴリズム</tag>
       </tags>
   </entry>
+  <entry>
+    <title>データ構造-双方向循環リスト番兵ノードつけ</title>
+    <url>/2022/12/30/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E5%8F%8C%E6%96%B9%E5%90%91%E5%BE%AA%E7%92%B0%E3%83%AA%E3%82%B9%E3%83%88%E7%95%AA%E5%85%B5%E3%83%8E%E3%83%BC%E3%83%89%E3%81%A4%E3%81%91/</url>
+    <content><![CDATA[<p><strong>本文章については</strong>、Cプログラミングで双方向循環リストを実現し、また番兵ノードもつける。双方向循環リストにおける概念や運用などを明らかに述べることである。<br><strong>目次 &gt;</strong></p>
+<ul>
+<li>概念と構造</li>
+<li>双方向循環リストの実現<ul>
+<li>動的ようにノードを生成</li>
+<li>出力関数（テスト用）</li>
+<li>尾にデータを挿入</li>
+<li>ヘッドにデータを挿入</li>
+<li>尾にデータを削除</li>
+<li>ヘッドにデータを削除</li>
+<li>pos位置の後ろにデータを挿入</li>
+<li>pos位置の後ろにデータを削除</li>
+<li>データの検索</li>
+<li>双方向循環リストの破壊</li>
+</ul>
+</li>
+<li>単方向リストとの違い点<ul>
+<li>メリット</li>
+<li>デメリット</li>
+</ul>
+</li>
+</ul>
+<span id="more"></span>
+<br>
+
+<table>
+<thead>
+<tr>
+<th align="left">名称</th>
+<th align="left">データタイプ</th>
+<th align="center">サイズ</th>
+</tr>
+</thead>
+</table>
+<p><img src="/images/c/111.png" alt="結果"></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">内容</span><br></pre></td></tr></table></figure>
+
+<h1 id="概念と構造"><a href="#概念と構造" class="headerlink" title="概念と構造"></a>概念と構造</h1><p>双方向循環リスト番兵ノードつけ: 構造は単方向リストよりも複雑で、通常はデータを個別に格納するために使用されます。 実際に使用される連結リストのデータ構造は、リードを持つ双方向の循環連結リストです。 さらに、構造は複雑ですが、コードを使用して実装すると、構造が多くの利点をもたらし、実装が簡単であることがわかります。後でコードを実装するときにご覧ください。  </p>
+<ul>
+<li><p>双方向循環リスト番兵ノードつけ<br><img src="/images/SSS/SSS03001.png" alt="結果"></p>
+</li>
+<li><p>ノードの本体<br><img src="/images/SSS/SSS03002.png" alt="結果"></p>
+</li>
+<li><p>ノードなしの時<br><img src="/images/SSS/SSS03003.png" alt="結果"></p>
+</li>
+</ul>
+<br>
+
+<h1 id="双方向循環リストの実現"><a href="#双方向循環リストの実現" class="headerlink" title="双方向循環リストの実現"></a>双方向循環リストの実現</h1><p>返されたリンク リストのヘッド ノードを作成する。(連結リストの初期化)</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">LTNode* <span class="title function_">ListInit</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">	LTNode* phead = BuyListNode(<span class="number">-1</span>); <span class="comment">//　ヘッドノードに　-1　を入れる</span></span><br><span class="line">	phead-&gt;_prev = phead; <span class="comment">//　すべてが番兵ノードの自分自身を指している</span></span><br><span class="line">	phead-&gt;_next = phead;</span><br><span class="line">	<span class="keyword">return</span> phead;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+<h2 id="動的ようにノードを生成"><a href="#動的ようにノードを生成" class="headerlink" title="動的ようにノードを生成"></a>動的ようにノードを生成</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">LTNode* <span class="title function_">BuyListNode</span><span class="params">(LTDataType x)</span></span><br><span class="line">&#123;</span><br><span class="line">	LTNode* node = (LTNode*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(LTNode));</span><br><span class="line">	<span class="keyword">if</span> (node == <span class="literal">NULL</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;malloc fail\n&quot;</span>);</span><br><span class="line">		<span class="built_in">exit</span>(<span class="number">-1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	node-&gt;_data = x;</span><br><span class="line">	node-&gt;_next = <span class="literal">NULL</span>;</span><br><span class="line">	node-&gt;_prev = <span class="literal">NULL</span>;</span><br><span class="line">	<span class="keyword">return</span> node;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+<h2 id="出力関数（テスト用）"><a href="#出力関数（テスト用）" class="headerlink" title="出力関数（テスト用）"></a>出力関数（テスト用）</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">ListPrint</span><span class="params">(LTNode* phead)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(phead);</span><br><span class="line"></span><br><span class="line">	LTNode* cur = phead-&gt;_next;</span><br><span class="line">	<span class="keyword">while</span> (cur != phead)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, cur-&gt;_data);</span><br><span class="line">		cur = cur-&gt;_next;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+<h2 id="尾にデータを挿入"><a href="#尾にデータを挿入" class="headerlink" title="尾にデータを挿入"></a>尾にデータを挿入</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">ListPushBack</span><span class="params">(LTNode* phead, LTDataType x)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(phead);</span><br><span class="line">	ListInsert(phead, x);　<span class="comment">//　再利用</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//LTNode* newnode = BuyListNode(x);</span></span><br><span class="line">	<span class="comment">//LTNode* tail = phead-&gt;_prev;</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//tail-&gt;_next = newnode;</span></span><br><span class="line">	<span class="comment">//newnode-&gt;_prev = tail;</span></span><br><span class="line">	<span class="comment">//newnode-&gt;_next = phead;</span></span><br><span class="line">	<span class="comment">//phead-&gt;_prev = newnode;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+<h2 id="ヘッドにデータを挿入"><a href="#ヘッドにデータを挿入" class="headerlink" title="ヘッドにデータを挿入"></a>ヘッドにデータを挿入</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">ListPushFront</span><span class="params">(LTNode* phead, LTDataType x)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(phead);</span><br><span class="line">	ListInsert(phead-&gt;_next, x); <span class="comment">//　再利用</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//LTNode* newnode = BuyListNode(x);</span></span><br><span class="line">	<span class="comment">//LTNode* next = phead-&gt;_next;</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//phead-&gt;_next = newnode;</span></span><br><span class="line">	<span class="comment">//newnode-&gt;_next = next;</span></span><br><span class="line">	<span class="comment">//next-&gt;_prev = newnode;</span></span><br><span class="line">	<span class="comment">//newnode-&gt;_prev = phead;</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+<h2 id="尾にデータを削除"><a href="#尾にデータを削除" class="headerlink" title="尾にデータを削除"></a>尾にデータを削除</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">ListPopBack</span><span class="params">(LTNode* phead)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(phead);</span><br><span class="line">	assert(!ListEmpty(phead)); <span class="comment">//　リストが空でない場合にしか続行しない</span></span><br><span class="line"></span><br><span class="line">	ListErase(phead-&gt;_prev);</span><br><span class="line"></span><br><span class="line">	<span class="comment">//LTNode* tail = phead-&gt;_prev;</span></span><br><span class="line">	<span class="comment">//LTNode* tailPrev = tail-&gt;_prev;</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//free(tail);</span></span><br><span class="line">	<span class="comment">//tailPrev-&gt;_next = phead;</span></span><br><span class="line">	<span class="comment">//phead-&gt;_prev = tailPrev;</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+<h2 id="ヘッドにデータを削除"><a href="#ヘッドにデータを削除" class="headerlink" title="ヘッドにデータを削除"></a>ヘッドにデータを削除</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">ListPopFront</span><span class="params">(LTNode* phead)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(phead);</span><br><span class="line">	assert(!ListEmpty(phead));<span class="comment">//　リストが空でない場合にしか続行しない</span></span><br><span class="line">	ListErase(phead-&gt;_next); <span class="comment">//　再利用</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+<h2 id="pos位置の前にデータを挿入"><a href="#pos位置の前にデータを挿入" class="headerlink" title="pos位置の前にデータを挿入"></a>pos位置の前にデータを挿入</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">ListInsert</span><span class="params">(LTNode* pos, LTDataType x)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(pos);</span><br><span class="line">	LTNode* prev = pos-&gt;_prev;</span><br><span class="line">	LTNode* newnode = BuyListNode(x);</span><br><span class="line"></span><br><span class="line">	prev-&gt;_next = newnode;</span><br><span class="line">	newnode-&gt;_prev = prev;</span><br><span class="line">	newnode-&gt;_next = pos;</span><br><span class="line">	pos-&gt;_prev = newnode;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+<h2 id="pos位置にデータを削除"><a href="#pos位置にデータを削除" class="headerlink" title="pos位置にデータを削除"></a>pos位置にデータを削除</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">ListErase</span><span class="params">(LTNode* pos)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(pos);</span><br><span class="line">	LTNode* prve = pos-&gt;_prev;</span><br><span class="line">	LTNode* next = pos-&gt;_next;</span><br><span class="line"></span><br><span class="line">	prve-&gt;_next = next;</span><br><span class="line">	next-&gt;_prev = prve;</span><br><span class="line">	<span class="built_in">free</span>(pos);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+<h2 id="データの検索"><a href="#データの検索" class="headerlink" title="データの検索"></a>データの検索</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">LTNode* <span class="title function_">ListFind</span><span class="params">(LTNode* phead, LTDataType x)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(phead);</span><br><span class="line">	LTNode* cur = phead-&gt;_next;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">while</span> (cur != phead)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (cur-&gt;_data == x) </span><br><span class="line">			<span class="keyword">return</span> cur; <span class="comment">// それを見つけた</span></span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			cur = cur-&gt;_next;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="literal">NULL</span>; <span class="comment">// 見つけていない</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+<h2 id="双方向循環リストの破壊"><a href="#双方向循環リストの破壊" class="headerlink" title="双方向循環リストの破壊"></a>双方向循環リストの破壊</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">ListDestory</span><span class="params">(LTNode* phead)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(phead);</span><br><span class="line">	LTNode* cur = phead-&gt;_next;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">while</span> (cur != phead) <span class="comment">// phead だけ残ったら終了</span></span><br><span class="line">	&#123;</span><br><span class="line">		LTNode* next = cur-&gt;_next; <span class="comment">//　ループ内のすべてのノードを解放する</span></span><br><span class="line">		<span class="built_in">free</span>(cur);</span><br><span class="line">		cur = next;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="built_in">free</span>(phead);</span><br><span class="line">	phead = <span class="literal">NULL</span>;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;破壊成功\n&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h1 id="単方向リストとの違い点"><a href="#単方向リストとの違い点" class="headerlink" title="単方向リストとの違い点"></a>単方向リストとの違い点</h1><br>
+
+<h2 id="メリット"><a href="#メリット" class="headerlink" title="メリット"></a>メリット</h2><br>
+
+<h2 id="デメリット"><a href="#デメリット" class="headerlink" title="デメリット"></a>デメリット</h2><br>
+
+
+<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><ul>
+<li><a href="https://github.com/soukenki/Test_for_C/tree/master/test_list2">https://github.com/soukenki/Test_for_C/tree/master/test_list2</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>データ構造とアルゴリズム</category>
+      </categories>
+      <tags>
+        <tag>C言語</tag>
+        <tag>データ構造とアルゴリズム</tag>
+      </tags>
+  </entry>
 </search>
