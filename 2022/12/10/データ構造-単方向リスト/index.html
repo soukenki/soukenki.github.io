@@ -20,13 +20,14 @@
     var CONFIG = {"hostname":"soukenki.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":false,"post_header":false,"post_body":"slideDownIn","coll_header":false,"sidebar":false}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="本文章については、Cプログラミングで単方向リストを実現し、単方向リストにおける概念や運用などを明らかに述べることである。目次 &gt;  概念と構造 単方向リストの実現 動的ように要素を生成 出力関数（テスト用） 尾にデータを挿入 ヘッドにデータを挿入 尾にデータを削除 ヘッドにデータを削除 pos位置の後ろにデータを挿入 pos位置の後ろにデータを削除 データの検索 単方向リストの破壊">
+  <meta name="description" content="本文章については、Cプログラミングで単方向リストを実現し、単方向リストにおける概念や運用などを明らかに述べることである。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="データ構造-単方向リスト">
 <meta property="og:url" content="https://soukenki.github.io/2022/12/10/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E5%8D%98%E6%96%B9%E5%90%91%E3%83%AA%E3%82%B9%E3%83%88/index.html">
-<meta property="og:site_name" content="ITノート屋">
-<meta property="og:description" content="本文章については、Cプログラミングで単方向リストを実現し、単方向リストにおける概念や運用などを明らかに述べることである。目次 &gt;  概念と構造 単方向リストの実現 動的ように要素を生成 出力関数（テスト用） 尾にデータを挿入 ヘッドにデータを挿入 尾にデータを削除 ヘッドにデータを削除 pos位置の後ろにデータを挿入 pos位置の後ろにデータを削除 データの検索 単方向リストの破壊">
+<meta property="og:site_name" content="Skkシェア">
+<meta property="og:description" content="本文章については、Cプログラミングで単方向リストを実現し、単方向リストにおける概念や運用などを明らかに述べることである。">
 <meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://soukenki.github.io/images/SSS/SSS02000.png">
 <meta property="og:image" content="https://soukenki.github.io/images/SSS/SSS02001.png">
 <meta property="og:image" content="https://soukenki.github.io/images/SSS/SSS02002.png">
 <meta property="og:image" content="https://soukenki.github.io/images/SSS/SSS02003.png">
@@ -35,12 +36,12 @@
 <meta property="og:image" content="https://soukenki.github.io/images/SSS/SSS02006.png">
 <meta property="og:image" content="https://soukenki.github.io/images/SSS/SSS02007.png">
 <meta property="article:published_time" content="2022-12-09T17:00:55.000Z">
-<meta property="article:modified_time" content="2023-01-17T15:48:50.756Z">
+<meta property="article:modified_time" content="2023-01-18T07:26:03.102Z">
 <meta property="article:author" content="Skk">
 <meta property="article:tag" content="C言語">
 <meta property="article:tag" content="データ構造とアルゴリズム">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://soukenki.github.io/images/SSS/SSS02001.png">
+<meta name="twitter:image" content="https://soukenki.github.io/images/SSS/SSS02000.png">
 
 <link rel="canonical" href="https://soukenki.github.io/2022/12/10/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E5%8D%98%E6%96%B9%E5%90%91%E3%83%AA%E3%82%B9%E3%83%88/">
 
@@ -55,7 +56,7 @@
   };
 </script>
 
-  <title>データ構造-単方向リスト | ITノート屋</title>
+  <title>データ構造-単方向リスト | Skkシェア</title>
   
 
 
@@ -106,7 +107,7 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">ITノート屋</h1>
+      <h1 class="site-title">Skkシェア</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -214,7 +215,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ITノート屋">
+      <meta itemprop="name" content="Skkシェア">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -235,7 +236,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">編集日</span>
-                <time title="修正日：2023-01-18 00:48:50" itemprop="dateModified" datetime="2023-01-18T00:48:50+09:00">2023-01-18</time>
+                <time title="修正日：2023-01-18 16:26:03" itemprop="dateModified" datetime="2023-01-18T16:26:03+09:00">2023-01-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -279,7 +280,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><strong>本文章については</strong>、Cプログラミングで単方向リストを実現し、単方向リストにおける概念や運用などを明らかに述べることである。<br><strong>目次 &gt;</strong></p>
+        <p><img src="/images/SSS/SSS02000.png"><br><strong>本文章については</strong>、Cプログラミングで単方向リストを実現し、単方向リストにおける概念や運用などを明らかに述べることである。</p>
+<span id="more"></span>
+
+<p><strong>目次 &gt;</strong></p>
 <ul>
 <li>概念と構造</li>
 <li>単方向リストの実現<ul>
@@ -296,7 +300,6 @@
 </ul>
 </li>
 </ul>
-<span id="more"></span>
 <br>
 
 <h1 id="概念と構造"><a href="#概念と構造" class="headerlink" title="- 概念と構造"></a>- 概念と構造</h1><p>リストとは、配列のようなもので、なかに複数のデータを入れることができますが、リストと配列の違いところもあります。リスト構造のうち、特に要素一つ一つがリンクによって接続されているものを、 「ノード」 と呼びます。</p>
@@ -456,7 +459,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">ポスト</span>
         </a>
       </div>

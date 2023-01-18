@@ -22,9 +22,9 @@
 
   <meta name="description" content="当サイトでは、IT技術の理解や活用など情報の提供を目指しています。">
 <meta property="og:type" content="website">
-<meta property="og:title" content="ITノート屋">
+<meta property="og:title" content="Skkシェア">
 <meta property="og:url" content="https://soukenki.github.io/index.html">
-<meta property="og:site_name" content="ITノート屋">
+<meta property="og:site_name" content="Skkシェア">
 <meta property="og:description" content="当サイトでは、IT技術の理解や活用など情報の提供を目指しています。">
 <meta property="og:locale" content="ja_JP">
 <meta property="article:author" content="Skk">
@@ -44,7 +44,7 @@
   };
 </script>
 
-  <title>ITノート屋</title>
+  <title>Skkシェア</title>
   
 
 
@@ -95,7 +95,7 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">ITノート屋</h1>
+      <h1 class="site-title">Skkシェア</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -193,6 +193,205 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="ja">
+    <link itemprop="mainEntityOfPage" href="https://soukenki.github.io/2023/01/18/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E3%82%AD%E3%83%A5%E3%83%BC/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/head.jpg">
+      <meta itemprop="name" content="Skk">
+      <meta itemprop="description" content="当サイトでは、IT技術の理解や活用など情報の提供を目指しています。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Skkシェア">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/01/18/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E3%82%AD%E3%83%A5%E3%83%BC/" class="post-title-link" itemprop="url">データ構造-キュー</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">投稿日</span>
+
+              <time title="作成日：2023-01-18 18:02:17" itemprop="dateCreated datePublished" datetime="2023-01-18T18:02:17+09:00">2023-01-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">編集日</span>
+                <time title="修正日：2023-01-19 01:00:48" itemprop="dateModified" datetime="2023-01-19T01:00:48+09:00">2023-01-19</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">カテゴリ</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0%E3%81%A8%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0/" itemprop="url" rel="index"><span itemprop="name">データ構造とアルゴリズム</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2023/01/18/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E3%82%AD%E3%83%A5%E3%83%BC/" class="post-meta-item leancloud_visitors" data-flag-title="データ構造-キュー" title="閲覧数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">閲覧数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2023/01/18/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E3%82%AD%E3%83%A5%E3%83%BC/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2023/01/18/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E3%82%AD%E3%83%A5%E3%83%BC/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="/images/SSS/SSS05001.png" alt="概念"><br><strong>本文章については</strong>、、Cプログラミングでキューを実現し、キューにおける概念などを明らかに述べることである。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/01/18/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E3%82%AD%E3%83%A5%E3%83%BC/#more" rel="contents">
+                続きを読む &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="ja">
+    <link itemprop="mainEntityOfPage" href="https://soukenki.github.io/2023/01/18/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E3%82%B9%E3%82%BF%E3%83%83%E3%82%AF/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/head.jpg">
+      <meta itemprop="name" content="Skk">
+      <meta itemprop="description" content="当サイトでは、IT技術の理解や活用など情報の提供を目指しています。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Skkシェア">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/01/18/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E3%82%B9%E3%82%BF%E3%83%83%E3%82%AF/" class="post-title-link" itemprop="url">データ構造-スタック</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">投稿日</span>
+              
+
+              <time title="作成日：2023-01-18 16:33:49 / 修正日：18:13:34" itemprop="dateCreated datePublished" datetime="2023-01-18T16:33:49+09:00">2023-01-18</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">カテゴリ</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0%E3%81%A8%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0/" itemprop="url" rel="index"><span itemprop="name">データ構造とアルゴリズム</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2023/01/18/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E3%82%B9%E3%82%BF%E3%83%83%E3%82%AF/" class="post-meta-item leancloud_visitors" data-flag-title="データ構造-スタック" title="閲覧数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">閲覧数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2023/01/18/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E3%82%B9%E3%82%BF%E3%83%83%E3%82%AF/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2023/01/18/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E3%82%B9%E3%82%BF%E3%83%83%E3%82%AF/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="/images/SSS/SSS04001.png" alt="概念"></p>
+<p><strong>本文章については</strong>、Cプログラミングでスタックを実現し、スタックにおける概念などを明らかに述べることである。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/01/18/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E3%82%B9%E3%82%BF%E3%83%83%E3%82%AF/#more" rel="contents">
+                続きを読む &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="ja">
     <link itemprop="mainEntityOfPage" href="https://soukenki.github.io/2022/12/30/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E5%8F%8C%E6%96%B9%E5%90%91%E5%BE%AA%E7%92%B0%E3%83%AA%E3%82%B9%E3%83%88%E7%95%AA%E5%85%B5%E3%83%8E%E3%83%BC%E3%83%89%E3%81%A4%E3%81%91/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -202,7 +401,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ITノート屋">
+      <meta itemprop="name" content="Skkシェア">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
@@ -224,7 +423,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">編集日</span>
-                <time title="修正日：2023-01-18 02:48:53" itemprop="dateModified" datetime="2023-01-18T02:48:53+09:00">2023-01-18</time>
+                <time title="修正日：2023-01-18 16:28:33" itemprop="dateModified" datetime="2023-01-18T16:28:33+09:00">2023-01-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -268,28 +467,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><strong>本文章については</strong>、Cプログラミングで双方向循環リストを実現し、また番兵ノードもつける。双方向循環リストにおける概念や運用などを明らかに述べることである。<br><strong>目次 &gt;</strong></p>
-<ul>
-<li>概念と構造</li>
-<li>双方向循環リストの実現<ul>
-<li>動的ようにノードを生成</li>
-<li>出力関数（テスト用）</li>
-<li>尾にデータを挿入</li>
-<li>ヘッドにデータを挿入</li>
-<li>尾にデータを削除</li>
-<li>ヘッドにデータを削除</li>
-<li>pos位置の後ろにデータを挿入</li>
-<li>pos位置の後ろにデータを削除</li>
-<li>データの検索</li>
-<li>双方向循環リストの破壊</li>
-</ul>
-</li>
-<li>単方向リストとの違い点<ul>
-<li>メリット</li>
-<li>デメリット</li>
-</ul>
-</li>
-</ul>
+          <p><img src="/images/SSS/SSS03001.png" alt="結果"><br><strong>本文章については</strong>、Cプログラミングで双方向循環リストを実現し、また番兵ノードもつける。双方向循環リストにおける概念や運用などを明らかに述べることである。</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2022/12/30/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E5%8F%8C%E6%96%B9%E5%90%91%E5%BE%AA%E7%92%B0%E3%83%AA%E3%82%B9%E3%83%88%E7%95%AA%E5%85%B5%E3%83%8E%E3%83%BC%E3%83%89%E3%81%A4%E3%81%91/#more" rel="contents">
@@ -325,7 +503,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ITノート屋">
+      <meta itemprop="name" content="Skkシェア">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
@@ -347,7 +525,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">編集日</span>
-                <time title="修正日：2023-01-18 00:48:50" itemprop="dateModified" datetime="2023-01-18T00:48:50+09:00">2023-01-18</time>
+                <time title="修正日：2023-01-18 16:26:03" itemprop="dateModified" datetime="2023-01-18T16:26:03+09:00">2023-01-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -391,23 +569,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><strong>本文章については</strong>、Cプログラミングで単方向リストを実現し、単方向リストにおける概念や運用などを明らかに述べることである。<br><strong>目次 &gt;</strong></p>
-<ul>
-<li>概念と構造</li>
-<li>単方向リストの実現<ul>
-<li>動的ように要素を生成</li>
-<li>出力関数（テスト用）</li>
-<li>尾にデータを挿入</li>
-<li>ヘッドにデータを挿入</li>
-<li>尾にデータを削除</li>
-<li>ヘッドにデータを削除</li>
-<li>pos位置の後ろにデータを挿入</li>
-<li>pos位置の後ろにデータを削除</li>
-<li>データの検索</li>
-<li>単方向リストの破壊</li>
-</ul>
-</li>
-</ul>
+          <p><img src="/images/SSS/SSS02000.png"><br><strong>本文章については</strong>、Cプログラミングで単方向リストを実現し、単方向リストにおける概念や運用などを明らかに述べることである。</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2022/12/10/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E5%8D%98%E6%96%B9%E5%90%91%E3%83%AA%E3%82%B9%E3%83%88/#more" rel="contents">
@@ -443,7 +605,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ITノート屋">
+      <meta itemprop="name" content="Skkシェア">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
@@ -457,10 +619,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">投稿日</span>
-              
 
-              <time title="作成日：2022-12-09 20:29:26 / 修正日：23:33:40" itemprop="dateCreated datePublished" datetime="2022-12-09T20:29:26+09:00">2022-12-09</time>
+              <time title="作成日：2022-12-09 20:29:26" itemprop="dateCreated datePublished" datetime="2022-12-09T20:29:26+09:00">2022-12-09</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">編集日</span>
+                <time title="修正日：2023-01-18 16:27:25" itemprop="dateModified" datetime="2023-01-18T16:27:25+09:00">2023-01-18</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -503,29 +671,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><strong>本文章については</strong>、Cプログラミングで可変長配列を実現し、可変長配列における概念などを明らかに述べることである。<br><strong>目次 &gt;</strong></p>
-<ul>
-<li>概念と構造</li>
-<li>可変長配列の実現<ul>
-<li>初期化</li>
-<li>尾にデータを挿入</li>
-<li>ヘッドにデータを挿入</li>
-<li>尾にデータを削除</li>
-<li>ヘッドにデータを削除</li>
-<li>任意の位置にデータを挿入</li>
-<li>任意の位置にデータを削除</li>
-<li>データの検索</li>
-<li>データの修正</li>
-<li>データの破壊</li>
-</ul>
-</li>
-<li>コードの要約<ul>
-<li>Test.c　</li>
-<li>SeqList.c</li>
-<li>SeqList.h</li>
-</ul>
-</li>
-</ul>
+          <p><img src="/images/SSS/SSS01001.jpg" alt="概念"></p>
+<p><strong>本文章については</strong>、Cプログラミングで可変長配列を実現し、可変長配列における概念などを明らかに述べることである。</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2022/12/09/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E5%8F%AF%E5%A4%89%E9%95%B7%E9%85%8D%E5%88%97/#more" rel="contents">
@@ -561,7 +708,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ITノート屋">
+      <meta itemprop="name" content="Skkシェア">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
@@ -689,7 +836,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ITノート屋">
+      <meta itemprop="name" content="Skkシェア">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
@@ -836,7 +983,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">ポスト</span>
         </a>
       </div>
