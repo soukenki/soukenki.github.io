@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>はじめまして</title>
+    <url>/2022/11/23/%E3%81%AF%E3%81%98%E3%82%81%E3%81%BE%E3%81%97%E3%81%A6/</url>
+    <content><![CDATA[<h2 id="目次"><a href="#目次" class="headerlink" title="目次"></a>目次</h2><ul>
+<li>自己紹介</li>
+<li>目標</li>
+<li>興味など</li>
+<li>ソースコード庫</li>
+</ul>
+<span id="more"></span>
+
+
+<h1 id="自己紹介"><a href="#自己紹介" class="headerlink" title="自己紹介"></a>自己紹介</h1><p>こんにちは。<br>ソウ　ケンキと申します。<br>このブログは、自分としてIT技術の理解や活用など情報をまとめるモノです。</p>
+<p>今日本の大学で情報について、様々な知識を勉強しています。<br>主に、C&#x2F;C++・Linuxなどの学習をやっています。</p>
+<p>私の性格は楽観的で明るいです。趣味は旅行、グルメ、音楽、釣りなどです。若し、皆さんは私のブログに対して、何かアドバイスや質問があれば、ぜひメール・LineやWeChatで連絡してください。  
+　　</p>
+<h1 id="目標"><a href="#目標" class="headerlink" title="目標"></a>目標</h1><p>一生懸命に勉強して、様々な知識を身につけるようになります。将来的には社会に役立つ、人々の生活を変えながら、生活をより便利にする製品を開発することができるように目指しています。</p>
+<h2 id="掲示板"><a href="#掲示板" class="headerlink" title="掲示板"></a>掲示板</h2><p>最後に、自分の興味として旅行や美食などの写真シェアを掲示します。</p>
+<p><img src="/images/lvxing_1.png"></p>
+<ul>
+<li>瑞龍寺</li>
+</ul>
+<p><img src="/images/lvxing_1_1.png"></p>
+<ul>
+<li>高岡大佛</li>
+</ul>
+<p><img src="/images/food_1.png"></p>
+<ul>
+<li>和牛ステーキ</li>
+</ul>
+<h2 id="ソースコード庫"><a href="#ソースコード庫" class="headerlink" title="ソースコード庫"></a>ソースコード庫</h2><ul>
+<li><a href="https://github.com/soukenki">https://github.com/soukenki</a></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>C言語：初めの紹介-1</title>
     <url>/2022/11/29/C%E8%A8%80%E8%AA%9E%EF%BC%9A%E5%88%9D%E3%82%81%E3%81%AE%E7%B4%B9%E4%BB%8B-1/</url>
     <content><![CDATA[<p><strong>本文章については</strong>、　Cプログラミング をはじめに学んだ知識のフレームワークです。たとえば、この記事のループでは、while を簡単に紹介するだけです。ここまでが記事の前半で、後でさまざまな文法の詳細に特化した記事を更新して投稿します。興味のある方は、引き続きブログの更新に注目してください〜<br><strong>目次 &gt;</strong></p>
@@ -418,39 +453,258 @@
       </tags>
   </entry>
   <entry>
-    <title>はじめまして</title>
-    <url>/2022/11/23/%E3%81%AF%E3%81%98%E3%82%81%E3%81%BE%E3%81%97%E3%81%A6/</url>
-    <content><![CDATA[<h2 id="目次"><a href="#目次" class="headerlink" title="目次"></a>目次</h2><ul>
-<li>自己紹介</li>
-<li>目標</li>
-<li>興味など</li>
-<li>ソースコード庫</li>
-</ul>
+    <title>データ構造-スタック</title>
+    <url>/2023/01/18/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E3%82%B9%E3%82%BF%E3%83%83%E3%82%AF/</url>
+    <content><![CDATA[<img src="/images/SSS/SSS04001.png" width="70%" height="70%">
+
+<p><strong>本文章については</strong>、Cプログラミングでスタックを実現し、スタックにおける概念などを明らかに述べることである。</p>
 <span id="more"></span>
 
+<p><strong>目次 &gt;</strong></p>
+<ul>
+<li>概念と構造</li>
+<li>スタックの実現<ul>
+<li>初期化</li>
+<li>データを挿入</li>
+<li>データを削除</li>
+<li>トップデータを取得</li>
+<li>データがあるかどうかを判断する</li>
+<li>スタック内のデータ数を取得</li>
+<li>スタックの破壊</li>
+</ul>
+</li>
+</ul>
+<br>
 
-<h1 id="自己紹介"><a href="#自己紹介" class="headerlink" title="自己紹介"></a>自己紹介</h1><p>こんにちは。<br>ソウ　ケンキと申します。<br>このブログは、自分としてIT技術の理解や活用など情報をまとめるモノです。</p>
-<p>今日本の大学で情報について、様々な知識を勉強しています。<br>主に、C&#x2F;C++・Linuxなどの学習をやっています。</p>
-<p>私の性格は楽観的で明るいです。趣味は旅行、グルメ、音楽、釣りなどです。若し、皆さんは私のブログに対して、何かアドバイスや質問があれば、ぜひメール・LineやWeChatで連絡してください。  
-　　</p>
-<h1 id="目標"><a href="#目標" class="headerlink" title="目標"></a>目標</h1><p>一生懸命に勉強して、様々な知識を身につけるようになります。将来的には社会に役立つ、人々の生活を変えながら、生活をより便利にする製品を開発することができるように目指しています。</p>
-<h2 id="掲示板"><a href="#掲示板" class="headerlink" title="掲示板"></a>掲示板</h2><p>最後に、自分の興味として旅行や美食などの写真シェアを掲示します。</p>
-<p><img src="/images/lvxing_1.png"></p>
-<ul>
-<li>瑞龍寺</li>
-</ul>
-<p><img src="/images/lvxing_1_1.png"></p>
-<ul>
-<li>高岡大佛</li>
-</ul>
-<p><img src="/images/food_1.png"></p>
-<ul>
-<li>和牛ステーキ</li>
-</ul>
-<h2 id="ソースコード庫"><a href="#ソースコード庫" class="headerlink" title="ソースコード庫"></a>ソースコード庫</h2><ul>
-<li><a href="https://github.com/soukenki">https://github.com/soukenki</a></li>
+<h1 id="概念と構造"><a href="#概念と構造" class="headerlink" title="概念と構造"></a>概念と構造</h1><p><img src="/images/SSS/SSS04001.png" alt="概念"><br>スタックとは、データ構造の一つであるリストの中で、特に挿入、削除がリストの先頭からしかできないものである。このような構造は、LIFO (Last In First Out 後入れ先出し）と呼ばれる。</p>
+<p>スタックは、例で言えば、机上に積み上げられた本のような構造をしている。本は上に積み上げられていき、読みたい本は上から順に取っていかなければ取れないという点が、スタックと似ている。</p>
+<br>
+
+<h1 id="スタックの実現"><a href="#スタックの実現" class="headerlink" title="スタックの実現"></a>スタックの実現</h1><p>スタックの実装は、一般的には配列や連結リストを使って実装できますが、相対的に言えば、配列の構造の方が優れています。 配列の最後にデータを挿入するコストは比較的小さいためです。</p>
+<p>Stackの構造：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">// スタック構造 (動的)</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">int</span> STDataType;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">Stack</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">	STDataType* _a;</span><br><span class="line">	<span class="type">int</span> _top;      <span class="comment">// トップ</span></span><br><span class="line">	<span class="type">int</span> _capacity;   <span class="comment">// 容量</span></span><br><span class="line">&#125;ST;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="初期化"><a href="#初期化" class="headerlink" title="初期化"></a>初期化</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">StackInit</span><span class="params">(ST* ps)</span> <span class="comment">// 初期化</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(ps);</span><br><span class="line">	ps-&gt;_a = <span class="literal">NULL</span>;</span><br><span class="line">	ps-&gt;_top = <span class="number">0</span>;</span><br><span class="line">	ps-&gt;_capacity = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="データを挿入"><a href="#データを挿入" class="headerlink" title="データを挿入"></a>データを挿入</h2><p><img src="/images/SSS/SSS04002.png" alt="概念"></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">StackPush</span><span class="params">(ST* ps, STDataType x)</span> <span class="comment">// 挿入</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(ps);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span> (ps-&gt;_top == ps-&gt;_capacity)  <span class="comment">// 容量を拡大</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> newCapacity = ps-&gt;_capacity == <span class="number">0</span> ? <span class="number">4</span> : ps-&gt;_capacity * <span class="number">2</span>;</span><br><span class="line">		STDataType* tmp = (STDataType*)<span class="built_in">realloc</span>(ps-&gt;_a, <span class="keyword">sizeof</span>(STDataType) * newCapacity);</span><br><span class="line">		<span class="keyword">if</span> (tmp == <span class="literal">NULL</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">&quot;realloc fail\n&quot;</span>);</span><br><span class="line">			<span class="built_in">exit</span>(<span class="number">-1</span>);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		ps-&gt;_a = tmp;</span><br><span class="line">		ps-&gt;_capacity = newCapacity;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	ps-&gt;_a[ps-&gt;_top] = x;</span><br><span class="line">	ps-&gt;_top++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="データを削除"><a href="#データを削除" class="headerlink" title="データを削除"></a>データを削除</h2><p><img src="/images/SSS/SSS04003.png" alt="概念"></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">StackPop</span><span class="params">(ST* ps)</span>  <span class="comment">//　消去</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(ps);</span><br><span class="line">	assert(!StackEmpty(ps));</span><br><span class="line">	ps-&gt;_top--;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="トップデータを取得"><a href="#トップデータを取得" class="headerlink" title="トップデータを取得"></a>トップデータを取得</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">STDataType <span class="title function_">StackTop</span><span class="params">(ST* ps)</span> <span class="comment">//　トップデータを取得</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(ps);</span><br><span class="line">	assert(!StackEmpty(ps));</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> ps-&gt;_a[ps-&gt;_top - <span class="number">1</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="データがあるかどうかを判断する"><a href="#データがあるかどうかを判断する" class="headerlink" title="データがあるかどうかを判断する"></a>データがあるかどうかを判断する</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">bool</span> <span class="title function_">StackEmpty</span><span class="params">(ST* ps)</span> </span><br><span class="line">&#123;</span><br><span class="line">	assert(ps);</span><br><span class="line">	<span class="keyword">return</span> ps-&gt;_top == <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="スタック内のデータ数を取得"><a href="#スタック内のデータ数を取得" class="headerlink" title="スタック内のデータ数を取得"></a>スタック内のデータ数を取得</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">StackSize</span><span class="params">(ST* ps)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(ps);</span><br><span class="line">	<span class="keyword">return</span> ps-&gt;_top;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="スタックの破壊"><a href="#スタックの破壊" class="headerlink" title="スタックの破壊"></a>スタックの破壊</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">StackDestory</span><span class="params">(ST* ps)</span> <span class="comment">//　破壊</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(ps);</span><br><span class="line">	<span class="built_in">free</span>(ps-&gt;_a);</span><br><span class="line">	ps-&gt;_a = <span class="literal">NULL</span>;</span><br><span class="line">	ps-&gt;_top = <span class="number">0</span>;</span><br><span class="line">	ps-&gt;_capacity = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><ul>
+<li><a href="https://github.com/soukenki/Test_for_C/tree/master/Stack">https://github.com/soukenki/Test_for_C/tree/master/Stack</a></li>
 </ul>
 ]]></content>
+      <categories>
+        <category>データ構造とアルゴリズム</category>
+      </categories>
+      <tags>
+        <tag>C言語</tag>
+        <tag>データ構造とアルゴリズム</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>データ構造-キュー</title>
+    <url>/2023/01/18/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E3%82%AD%E3%83%A5%E3%83%BC/</url>
+    <content><![CDATA[<img src="/images/SSS/SSS05001.png" width="70%" height="70%">
+
+<p><strong>本文章については</strong>、、Cプログラミングでキューを実現し、キューにおける概念などを明らかに述べることである。</p>
+<span id="more"></span>
+
+<p><strong>目次 &gt;</strong></p>
+<ul>
+<li>概念と構造</li>
+<li>キューの実現<ul>
+<li>初期化</li>
+<li>データを挿入</li>
+<li>データを削除</li>
+<li>ヘッドデータを取得</li>
+<li>尾データを取得</li>
+<li>データがあるかどうかを判断する</li>
+<li>キュー内のデータ数を取得</li>
+<li>キューの破壊</li>
+</ul>
+</li>
+</ul>
+<br>
+
+
+<h1 id="概念と構造"><a href="#概念と構造" class="headerlink" title="概念と構造"></a>概念と構造</h1><p><img src="/images/SSS/SSS05001.png" alt="概念"><br>キューとは、先頭が常に最も古い要素になるデータ構造で、新しい要素は必ず末尾に追加される。取り出すときは常に先頭の最も古い要素から取り出される。このように先に入れたものほど先に取り出される管理方式を「FIFO」（First-In First-Out&#x2F;先入れ先出し）という。</p>
+<p>具体例なイメージは、人の行列を思い出してみてください</p>
+<p>例えば、ディズニーランドでアトラクションを待っているとき、先に列に並んでいる人から、アトラクションに案内されますね</p>
+<ul>
+<li>ノードの接続・ノードの本体<br><img src="/images/SSS/SSS05002.png" alt="概念"><br></li>
+</ul>
+<h1 id="キューの実現"><a href="#キューの実現" class="headerlink" title="キューの実現"></a>キューの実現</h1><p>ノードの本体：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">//队列结构</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">int</span> QDataType;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">QueueNode</span> // ノード</span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">QueueNode</span>* _<span class="title">next</span>;</span></span><br><span class="line">	QDataType _data;</span><br><span class="line">&#125;QNode;</span><br></pre></td></tr></table></figure>
+<p>Queueの構造：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">Queue</span>  //　構造の入れ子</span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">	<span class="comment">//int size; //　ここでsizeを作成してサイズを記録することもできる</span></span><br><span class="line">	QNode* _head;</span><br><span class="line">	QNode* _tail;</span><br><span class="line">&#125;Queue;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="初期化"><a href="#初期化" class="headerlink" title="初期化"></a>初期化</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">QueueInit</span><span class="params">(Queue* pq)</span>  <span class="comment">//　初期化</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(pq);</span><br><span class="line">	pq-&gt;_head = pq-&gt;_tail = <span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="データを挿入"><a href="#データを挿入" class="headerlink" title="データを挿入"></a>データを挿入</h2><p><img src="/images/SSS/SSS05003.png" alt="概念"></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">QueuePush</span><span class="params">(Queue* pq, QDataType x)</span> <span class="comment">// 挿入</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(pq);</span><br><span class="line">	QNode* newnode = (QNode*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(QNode)); <span class="comment">// 新しいノードを作成する</span></span><br><span class="line">	<span class="keyword">if</span> (newnode == <span class="literal">NULL</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;malloc fail\n&quot;</span>);</span><br><span class="line">		<span class="built_in">exit</span>(<span class="number">-1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	newnode-&gt;_data = x;</span><br><span class="line">	newnode-&gt;_next = <span class="literal">NULL</span>;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//　挿入</span></span><br><span class="line">	<span class="keyword">if</span> (pq-&gt;_tail == <span class="literal">NULL</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		pq-&gt;_head = pq-&gt;_tail = newnode; </span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		pq-&gt;_tail-&gt;_next = newnode;</span><br><span class="line">		pq-&gt;_tail = newnode;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="データを削除"><a href="#データを削除" class="headerlink" title="データを削除"></a>データを削除</h2><p><img src="/images/SSS/SSS05004.png" alt="概念"></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">QueuePop</span><span class="params">(Queue* pq)</span>  <span class="comment">// 削除</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(pq);</span><br><span class="line">	assert(!QueueEmpty(pq));</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span> (pq-&gt;_head-&gt;_next == <span class="literal">NULL</span>) <span class="comment">// 最後のノードが残っているとき</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">free</span>(pq-&gt;_head);</span><br><span class="line">		pq-&gt;_head = pq-&gt;_tail = <span class="literal">NULL</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span>  <span class="comment">// ノードが複数ある場合</span></span><br><span class="line">	&#123;</span><br><span class="line">		Queue* next = pq-&gt;_head-&gt;_next;</span><br><span class="line">		<span class="built_in">free</span>(pq-&gt;_head);</span><br><span class="line">		pq-&gt;_head = next;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="ヘッドデータを取得"><a href="#ヘッドデータを取得" class="headerlink" title="ヘッドデータを取得"></a>ヘッドデータを取得</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">QDataType <span class="title function_">QueueFront</span><span class="params">(Queue* pq)</span>  <span class="comment">// headデータを取得</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(pq);</span><br><span class="line">	assert(!QueueEmpty(pq));</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> pq-&gt;_head-&gt;_data;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="尾データを取得"><a href="#尾データを取得" class="headerlink" title="尾データを取得"></a>尾データを取得</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">QDataType <span class="title function_">QueueBack</span><span class="params">(Queue* pq)</span>  <span class="comment">//  tailデータを取得</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(pq);</span><br><span class="line">	assert(!QueueEmpty(pq));</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> pq-&gt;_tail-&gt;_data;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="データがあるかどうかを判断する"><a href="#データがあるかどうかを判断する" class="headerlink" title="データがあるかどうかを判断する"></a>データがあるかどうかを判断する</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">bool</span> <span class="title function_">QueueEmpty</span><span class="params">(Queue* pq)</span>  <span class="comment">// 空であろうか</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(pq);</span><br><span class="line">	<span class="keyword">return</span> pq-&gt;_head == <span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="キュー内のデータ数を取得"><a href="#キュー内のデータ数を取得" class="headerlink" title="キュー内のデータ数を取得"></a>キュー内のデータ数を取得</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">QueueSize</span><span class="params">(Queue* pq)</span> <span class="comment">//　size</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(pq);</span><br><span class="line">	QNode* cur = pq-&gt;_head;</span><br><span class="line">	<span class="type">int</span> size = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span> (cur)</span><br><span class="line">	&#123;</span><br><span class="line">		++size;</span><br><span class="line">		cur = cur-&gt;_next;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> size;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="キューの破壊"><a href="#キューの破壊" class="headerlink" title="キューの破壊"></a>キューの破壊</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">QueueDestroy</span><span class="params">(Queue* pq)</span>  <span class="comment">// 破壊</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(pq);</span><br><span class="line">	QNode* cur = pq-&gt;_head;</span><br><span class="line">	<span class="keyword">while</span> (cur)</span><br><span class="line">	&#123;</span><br><span class="line">		QNode* next = cur-&gt;_next;</span><br><span class="line">		<span class="built_in">free</span>(cur);</span><br><span class="line">		cur = next;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	pq-&gt;_head = pq-&gt;_tail = <span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+
+<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><ul>
+<li><a href="https://github.com/soukenki/Test_for_C/tree/master/Queue">https://github.com/soukenki/Test_for_C/tree/master/Queue</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>データ構造とアルゴリズム</category>
+      </categories>
+      <tags>
+        <tag>C言語</tag>
+        <tag>データ構造とアルゴリズム</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>データ構造-二分木</title>
+    <url>/2023/01/19/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E4%BA%8C%E5%88%86%E6%9C%A8/</url>
+    <content><![CDATA[<p><img src="/images/SSS/SSS06001.png" alt="概念"><br><strong>本文章については</strong>、Cプログラミングで二分木を実現し、二分木における概念などを明らかに述べることである。</p>
+<span id="more"></span>
+
+<p><strong>目次 &gt;</strong></p>
+<ul>
+<li>概念と構造</li>
+<li>二分木の実現<ul>
+<li>動的ようにノードを生成</li>
+<li>走査（トラバース）<ul>
+<li>行きがけ順探索</li>
+<li>通りがけ順探索</li>
+<li>帰りがけ順探索</li>
+<li>幅優先探索</li>
+</ul>
+</li>
+<li>ノード数</li>
+<li>葉ノードの数</li>
+<li>第 k 層のノード数</li>
+<li>値が x のノードを見つける</li>
+<li>木の深さを見つける</li>
+<li>完全二分木を判断する</li>
+<li>二分木の破壊</li>
+</ul>
+</li>
+</ul>
+<br>
+
+<h1 id="概念と構造"><a href="#概念と構造" class="headerlink" title="概念と構造"></a>概念と構造</h1><p><img src="/images/SSS/SSS06001.png" alt="概念"><br>二分木とは、葉以外のすべての節が、２つ以下の子を持つような木構造のことである。もし、必ず２つの子を持つようならば、全二分木と呼ばれる。さらに、どの葉も同じ深さにある場合は、完全二分木と呼ばれる。</p>
+<ul>
+<li>二分木の構造・ノードの本体<br><img src="/images/SSS/SSS06002.png" alt="概念"></li>
+<li>葉ノードにある二つのポインタは必ず <strong>NULL</strong>である。</li>
+</ul>
+<br>
+
+
+<h1 id="二分木の実現"><a href="#二分木の実現" class="headerlink" title="二分木の実現"></a>二分木の実現</h1><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">//　二分木の構造</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">char</span> BTDataType;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">BinaryTreeNode</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">	BTDataType _data;</span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">BinaryTreeNode</span>* _<span class="title">left</span>;</span></span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">BinaryTreeNode</span>* _<span class="title">right</span>;</span></span><br><span class="line">&#125;BTNode;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+<h2 id="動的ようにノードを生成"><a href="#動的ようにノードを生成" class="headerlink" title="動的ようにノードを生成"></a>動的ようにノードを生成</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">BTNode* <span class="title function_">BuyNode</span><span class="params">(BTDataType x)</span> <span class="comment">// 新しいノードを作成</span></span><br><span class="line">&#123;</span><br><span class="line">	BTNode* node = (BTNode*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(BTNode));</span><br><span class="line">	assert(node);</span><br><span class="line"></span><br><span class="line">	node-&gt;_data = x;</span><br><span class="line">	node-&gt;_left = node-&gt;_right = <span class="literal">NULL</span>;</span><br><span class="line">	<span class="keyword">return</span> node;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="走査（トラバース）"><a href="#走査（トラバース）" class="headerlink" title="走査（トラバース）"></a>走査（トラバース）</h2><p>二分木に含まれるすべての節を調べたいとする。このような処理を、走査（トラバース）と呼ぶ。ここで重要な点は、「すべてをもらさず」「同じものを重複せず」に調べつくすことである。</p>
+<p>二分木に対する走査の方法には、大きく分けると、<strong>深さ優先探索と幅優先探索</strong>の２つがある。前者はさらに、<strong>行きがけ順探索、通りがけ順探索、帰りがけ順探索</strong>に分類できる。これらは、調べる節の順序が異なる。</p>
+<p>深さ優先探索では、根から始めて、葉に行き着くまで子をたどっていく。葉まで行き着いたら、その親に戻り、先ほど辿った側ではないもう一方の子を調べに行き、やはり葉までたどる。これを繰り返せば、いずれすべての節を調べられる。</p>
+<p>行きがけ順探索、通りがけ順探索、帰りがけ順探索の違いは、根とその２つの子をどんな順序で調べることである。</p>
+<p><img src="/images/SSS/SSS06006.png" alt="概念"><br><br></p>
+<h3 id="行きがけ順探索"><a href="#行きがけ順探索" class="headerlink" title="行きがけ順探索"></a>行きがけ順探索</h3><p>行きがけ順探索では、根→左の部分木→右の部分木の順で調べる。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">PrevOrder</span><span class="params">(BTNode* root)</span>       </span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span> (root == <span class="literal">NULL</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;# &quot;</span>);</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, root-&gt;_data);</span><br><span class="line">	PrevOrder(root-&gt;_left);</span><br><span class="line">	PrevOrder(root-&gt;_right);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h3 id="通りがけ順探索"><a href="#通りがけ順探索" class="headerlink" title="通りがけ順探索"></a>通りがけ順探索</h3><p>通りがけ順探索では、左の部分木→根→右の部分木の順で調べる。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">InOrder</span><span class="params">(BTNode* root)</span> </span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span> (root == <span class="literal">NULL</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;# &quot;</span>);</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	InOrder(root-&gt;_left);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, root-&gt;_data);</span><br><span class="line">	InOrder(root-&gt;_right);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h3 id="帰りがけ順探索"><a href="#帰りがけ順探索" class="headerlink" title="帰りがけ順探索"></a>帰りがけ順探索</h3><p>帰りがけ順探索では、左の部分木→右の部分木→根の順で調べる。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">PostOrder</span><span class="params">(BTNode* root)</span> </span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span> (root == <span class="literal">NULL</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;# &quot;</span>);</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	PostOrder(root-&gt;_left);</span><br><span class="line">	PostOrder(root-&gt;_right);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, root-&gt;_data);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h3 id="幅優先探索"><a href="#幅優先探索" class="headerlink" title="幅優先探索"></a>幅優先探索</h3><p><img src="/images/SSS/SSS06004.png" alt="概念"><br><strong>幅優先探索</strong>は、まず根を調べ、次に１つ深い階層の左部分木、右部分木を調べる。１つの階層の節をすべて網羅してから、次の階層へ降りることを繰り返す。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 幅優先探索</span></span><br><span class="line"><span class="comment">// キューを使用して、ルート ノードをキューに入れる。キューが空でない場合は、</span></span><br><span class="line"><span class="comment">// ルートノードをデキューし、左右のサブツリーのルート ノードをキューに追加する。</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">LevelOrder</span><span class="params">(BTNode* root)</span></span><br><span class="line">&#123;</span><br><span class="line">	Queue q;</span><br><span class="line">	QueueInit(&amp;q);</span><br><span class="line">	<span class="keyword">if</span> (root)</span><br><span class="line">	&#123;</span><br><span class="line">		QueuePush(&amp;q, root);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">while</span> (!QueueEmpty(&amp;q))</span><br><span class="line">	&#123;</span><br><span class="line">		BTNode* front = QueueFront(&amp;q);</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, front-&gt;_data);</span><br><span class="line">		QueuePop(&amp;q);</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> (front-&gt;_left)</span><br><span class="line">		&#123;</span><br><span class="line">			QueuePush(&amp;q, front-&gt;_left);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (front-&gt;_right)</span><br><span class="line">		&#123;</span><br><span class="line">			QueuePush(&amp;q, front-&gt;_right);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">	QueueDestroy(&amp;q);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="ノード数"><a href="#ノード数" class="headerlink" title="ノード数"></a>ノード数</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">TreeSize</span><span class="params">(BTNode* root)</span> <span class="comment">// ノード数</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">return</span> root == <span class="literal">NULL</span> ? <span class="number">0</span> :</span><br><span class="line">		TreeSize(root-&gt;_left) + TreeSize(root-&gt;_right) + <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="葉ノードの数"><a href="#葉ノードの数" class="headerlink" title="葉ノードの数"></a>葉ノードの数</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">TreeLeafSize</span><span class="params">(BTNode* root)</span> </span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span> (root == <span class="literal">NULL</span>) </span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">if</span> (root-&gt;_left == <span class="literal">NULL</span> &amp;&amp; root-&gt;_right == <span class="literal">NULL</span>) <span class="comment">// 葉ノード</span></span><br><span class="line">		<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 空でも葉でもない場合は、左部分木の葉ノード + 右部分木葉ノードを返す</span></span><br><span class="line">	<span class="keyword">return</span> TreeLeafSize(root-&gt;_left) + TreeLeafSize(root-&gt;_right);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="第-k-層のノード数"><a href="#第-k-層のノード数" class="headerlink" title="第 k 層のノード数"></a>第 k 層のノード数</h2><p><img src="/images/SSS/SSS06008.png" alt="概念"></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">TreeKLevel</span><span class="params">(BTNode* root, <span class="type">int</span> k)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(k &gt;= <span class="number">1</span>);</span><br><span class="line">	<span class="keyword">if</span> (root == <span class="literal">NULL</span>)</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span> (k == <span class="number">1</span>)</span><br><span class="line">		<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> TreeKLevel(root-&gt;_left, k - <span class="number">1</span>)</span><br><span class="line">		+ TreeKLevel(root-&gt;_right, k - <span class="number">1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="値が-x-のノードを見つける"><a href="#値が-x-のノードを見つける" class="headerlink" title="値が x のノードを見つける"></a>値が x のノードを見つける</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">BTNode* <span class="title function_">TreeFind</span><span class="params">(BTNode* root, BTDataType x)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span> (root == <span class="literal">NULL</span>)</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">	<span class="keyword">if</span> (root-&gt;_data == x)</span><br><span class="line">		<span class="keyword">return</span> root;</span><br><span class="line"></span><br><span class="line">	BTNode* ret1 = TreeFind(root-&gt;_left, x);</span><br><span class="line">	<span class="keyword">if</span> (ret1)</span><br><span class="line">		<span class="keyword">return</span> ret1;</span><br><span class="line"></span><br><span class="line">	BTNode* ret2 = TreeFind(root-&gt;_right, x);</span><br><span class="line">	<span class="keyword">if</span> (ret2)</span><br><span class="line">		<span class="keyword">return</span> ret2;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="木の高さを見つける"><a href="#木の高さを見つける" class="headerlink" title="木の高さを見つける"></a>木の高さを見つける</h2><p><img src="/images/SSS/SSS06007.png" alt="概念"></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">TreeDepth</span><span class="params">(BTNode* root)</span> </span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span> (root == <span class="literal">NULL</span>)</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="type">int</span> leftDepth = TreeDepth(root-&gt;_left);</span><br><span class="line">	<span class="type">int</span> rightDepth = TreeDepth(root-&gt;_right);</span><br><span class="line">	<span class="keyword">return</span> leftDepth &gt; rightDepth ? leftDepth + <span class="number">1</span> : rightDepth + <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="完全二分木を判断する"><a href="#完全二分木を判断する" class="headerlink" title="完全二分木を判断する"></a>完全二分木を判断する</h2><ul>
+<li>幅優先探索のやり方を参考してください。(Queueを使用するので)</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">TreeComplete</span><span class="params">(BTNode* root)</span> </span><br><span class="line">&#123;</span><br><span class="line">	Queue q;</span><br><span class="line">	QueueInit(&amp;q);</span><br><span class="line">	<span class="keyword">if</span> (root)</span><br><span class="line">	&#123;</span><br><span class="line">		QueuePush(&amp;q, root);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">while</span> (!QueueEmpty(&amp;q))</span><br><span class="line">	&#123;</span><br><span class="line">		BTNode* front = QueueFront(&amp;q);</span><br><span class="line">		QueuePop(&amp;q);</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> (front)</span><br><span class="line">		&#123;</span><br><span class="line">			QueuePush(&amp;q, front-&gt;_left);</span><br><span class="line">			QueuePush(&amp;q, front-&gt;_right);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">		&#123;</span><br><span class="line">			<span class="comment">// 空きスペースに遭遇した後、シーケンス トラバーサルから飛び出す</span></span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 1. 裏が全て空なら完全二分木</span></span><br><span class="line">	<span class="comment">// 2. 空の後に非空がある場合、完全な二分木ではありません</span></span><br><span class="line">	<span class="keyword">while</span> (!QueueEmpty(&amp;q))</span><br><span class="line">	&#123;</span><br><span class="line">		BTNode* front = QueueFront(&amp;q);  <span class="comment">// 完全二分木の場合、front は常に NULL である</span></span><br><span class="line">		QueuePop(&amp;q);</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> (front)</span><br><span class="line">		&#123;</span><br><span class="line">			QueueDestroy(&amp;q);</span><br><span class="line">			<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	QueueDestroy(&amp;q);</span><br><span class="line">	<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="二分木の破壊"><a href="#二分木の破壊" class="headerlink" title="二分木の破壊"></a>二分木の破壊</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">TreeDestory</span><span class="params">(BTNode* root)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span> (root == <span class="literal">NULL</span>)</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line"></span><br><span class="line">	TreeDestory(root-&gt;_left);</span><br><span class="line">	TreeDestory(root-&gt;_right);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%p:%d\n&quot;</span>, root, root-&gt;_data);</span><br><span class="line">	<span class="built_in">free</span>(root);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+
+
+<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><ul>
+<li><a href="https://github.com/soukenki/Test_for_C/tree/master/BinaryTree">https://github.com/soukenki/Test_for_C/tree/master/BinaryTree</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>データ構造とアルゴリズム</category>
+      </categories>
+      <tags>
+        <tag>C言語</tag>
+        <tag>データ構造とアルゴリズム</tag>
+      </tags>
   </entry>
   <entry>
     <title>データ構造-単方向リスト</title>
@@ -532,6 +786,145 @@
 <p>次の投稿は、単方向リストに基づいて、「双方向循環リスト番兵ノードつけ」というデータ構造である。興味があれば、是非マイgithubをフォローしてくださいね。(笑)</p>
 <h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><ul>
 <li><a href="https://github.com/soukenki/Test_for_C/tree/master/test_list">https://github.com/soukenki/Test_for_C/tree/master/test_list</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>データ構造とアルゴリズム</category>
+      </categories>
+      <tags>
+        <tag>C言語</tag>
+        <tag>データ構造とアルゴリズム</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>データ構造-双方向循環リスト番兵ノードつけ</title>
+    <url>/2022/12/30/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E5%8F%8C%E6%96%B9%E5%90%91%E5%BE%AA%E7%92%B0%E3%83%AA%E3%82%B9%E3%83%88%E7%95%AA%E5%85%B5%E3%83%8E%E3%83%BC%E3%83%89%E3%81%A4%E3%81%91/</url>
+    <content><![CDATA[<p><img src="/images/SSS/SSS03001.png" alt="結果"><br><strong>本文章については</strong>、Cプログラミングで双方向循環リストを実現し、また番兵ノードもつける。双方向循環リストにおける概念や運用などを明らかに述べることである。</p>
+<span id="more"></span>
+
+<p><strong>目次 &gt;</strong></p>
+<ul>
+<li>概念と構造</li>
+<li>双方向循環リストの実現<ul>
+<li>動的ようにノードを生成</li>
+<li>出力関数（テスト用）</li>
+<li>尾にデータを挿入</li>
+<li>ヘッドにデータを挿入</li>
+<li>尾にデータを削除</li>
+<li>ヘッドにデータを削除</li>
+<li>pos位置の後ろにデータを挿入</li>
+<li>pos位置の後ろにデータを削除</li>
+<li>データの検索</li>
+<li>双方向循環リストの破壊</li>
+</ul>
+</li>
+<li>配列とリストの違い点</li>
+</ul>
+<br>
+
+<h1 id="概念と構造"><a href="#概念と構造" class="headerlink" title="概念と構造"></a>概念と構造</h1><p>双方向循環リスト番兵ノードつけ: 構造は単方向リストよりも複雑で、通常はデータを個別に格納するために使用されます。 実際に使用される連結リストのデータ構造は、リードを持つ双方向の循環連結リストです。 さらに、構造は複雑ですが、コードを使用して実装すると、構造が多くの利点をもたらし、実装が簡単であることがわかります。後でコードを実装するときにご覧ください。  </p>
+<ul>
+<li><p>双方向循環リスト番兵ノードつけ<br><img src="/images/SSS/SSS03001.png" alt="結果"></p>
+</li>
+<li><p>ノードの本体<br><img src="/images/SSS/SSS03002.png" alt="結果"></p>
+</li>
+<li><p>ノードなしの時<br><img src="/images/SSS/SSS03003.png" alt="結果"></p>
+</li>
+</ul>
+<br>
+
+<h1 id="双方向循環リストの実現"><a href="#双方向循環リストの実現" class="headerlink" title="双方向循環リストの実現"></a>双方向循環リストの実現</h1><p>返されたリンク リストのヘッド ノードを作成する。(連結リストの初期化)</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">LTNode* <span class="title function_">ListInit</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">	LTNode* phead = BuyListNode(<span class="number">-1</span>); <span class="comment">//　ヘッドノードに　-1　を入れる</span></span><br><span class="line">	phead-&gt;_prev = phead; <span class="comment">//　すべてが番兵ノードの自分自身を指している</span></span><br><span class="line">	phead-&gt;_next = phead;</span><br><span class="line">	<span class="keyword">return</span> phead;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+<h2 id="動的ようにノードを生成"><a href="#動的ようにノードを生成" class="headerlink" title="動的ようにノードを生成"></a>動的ようにノードを生成</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">LTNode* <span class="title function_">BuyListNode</span><span class="params">(LTDataType x)</span></span><br><span class="line">&#123;</span><br><span class="line">	LTNode* node = (LTNode*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(LTNode));</span><br><span class="line">	<span class="keyword">if</span> (node == <span class="literal">NULL</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;malloc fail\n&quot;</span>);</span><br><span class="line">		<span class="built_in">exit</span>(<span class="number">-1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	node-&gt;_data = x;</span><br><span class="line">	node-&gt;_next = <span class="literal">NULL</span>;</span><br><span class="line">	node-&gt;_prev = <span class="literal">NULL</span>;</span><br><span class="line">	<span class="keyword">return</span> node;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+<h2 id="出力関数（テスト用）"><a href="#出力関数（テスト用）" class="headerlink" title="出力関数（テスト用）"></a>出力関数（テスト用）</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">ListPrint</span><span class="params">(LTNode* phead)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(phead);</span><br><span class="line"></span><br><span class="line">	LTNode* cur = phead-&gt;_next;</span><br><span class="line">	<span class="keyword">while</span> (cur != phead)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, cur-&gt;_data);</span><br><span class="line">		cur = cur-&gt;_next;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+<h2 id="尾にデータを挿入"><a href="#尾にデータを挿入" class="headerlink" title="尾にデータを挿入"></a>尾にデータを挿入</h2><p><img src="/images/SSS/SSS03004.png" alt="結果"></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">ListPushBack</span><span class="params">(LTNode* phead, LTDataType x)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(phead);</span><br><span class="line">	ListInsert(phead, x);　<span class="comment">//　再利用</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//LTNode* newnode = BuyListNode(x);</span></span><br><span class="line">	<span class="comment">//LTNode* tail = phead-&gt;_prev;</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//tail-&gt;_next = newnode;</span></span><br><span class="line">	<span class="comment">//newnode-&gt;_prev = tail;</span></span><br><span class="line">	<span class="comment">//newnode-&gt;_next = phead;</span></span><br><span class="line">	<span class="comment">//phead-&gt;_prev = newnode;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+<h2 id="ヘッドにデータを挿入"><a href="#ヘッドにデータを挿入" class="headerlink" title="ヘッドにデータを挿入"></a>ヘッドにデータを挿入</h2><p><img src="/images/SSS/SSS03005.png" alt="結果"></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">ListPushFront</span><span class="params">(LTNode* phead, LTDataType x)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(phead);</span><br><span class="line">	ListInsert(phead-&gt;_next, x); <span class="comment">//　再利用</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//LTNode* newnode = BuyListNode(x);</span></span><br><span class="line">	<span class="comment">//LTNode* next = phead-&gt;_next;</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//phead-&gt;_next = newnode;</span></span><br><span class="line">	<span class="comment">//newnode-&gt;_next = next;</span></span><br><span class="line">	<span class="comment">//next-&gt;_prev = newnode;</span></span><br><span class="line">	<span class="comment">//newnode-&gt;_prev = phead;</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+<h2 id="尾にデータを削除"><a href="#尾にデータを削除" class="headerlink" title="尾にデータを削除"></a>尾にデータを削除</h2><p><img src="/images/SSS/SSS03006.png" alt="結果"></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">ListPopBack</span><span class="params">(LTNode* phead)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(phead);</span><br><span class="line">	assert(!ListEmpty(phead)); <span class="comment">//　リストが空でない場合にしか続行しない</span></span><br><span class="line"></span><br><span class="line">	ListErase(phead-&gt;_prev);</span><br><span class="line"></span><br><span class="line">	<span class="comment">//LTNode* tail = phead-&gt;_prev;</span></span><br><span class="line">	<span class="comment">//LTNode* tailPrev = tail-&gt;_prev;</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//free(tail);</span></span><br><span class="line">	<span class="comment">//tailPrev-&gt;_next = phead;</span></span><br><span class="line">	<span class="comment">//phead-&gt;_prev = tailPrev;</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+<h2 id="ヘッドにデータを削除"><a href="#ヘッドにデータを削除" class="headerlink" title="ヘッドにデータを削除"></a>ヘッドにデータを削除</h2><p><img src="/images/SSS/SSS03007.png" alt="結果"></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">ListPopFront</span><span class="params">(LTNode* phead)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(phead);</span><br><span class="line">	assert(!ListEmpty(phead));<span class="comment">//　リストが空でない場合にしか続行しない</span></span><br><span class="line">	ListErase(phead-&gt;_next); <span class="comment">//　再利用</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+<h2 id="pos位置の前にデータを挿入"><a href="#pos位置の前にデータを挿入" class="headerlink" title="pos位置の前にデータを挿入"></a>pos位置の前にデータを挿入</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">ListInsert</span><span class="params">(LTNode* pos, LTDataType x)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(pos);</span><br><span class="line">	LTNode* prev = pos-&gt;_prev;</span><br><span class="line">	LTNode* newnode = BuyListNode(x);</span><br><span class="line"></span><br><span class="line">	prev-&gt;_next = newnode;</span><br><span class="line">	newnode-&gt;_prev = prev;</span><br><span class="line">	newnode-&gt;_next = pos;</span><br><span class="line">	pos-&gt;_prev = newnode;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+<h2 id="pos位置にデータを削除"><a href="#pos位置にデータを削除" class="headerlink" title="pos位置にデータを削除"></a>pos位置にデータを削除</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">ListErase</span><span class="params">(LTNode* pos)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(pos);</span><br><span class="line">	LTNode* prve = pos-&gt;_prev;</span><br><span class="line">	LTNode* next = pos-&gt;_next;</span><br><span class="line"></span><br><span class="line">	prve-&gt;_next = next;</span><br><span class="line">	next-&gt;_prev = prve;</span><br><span class="line">	<span class="built_in">free</span>(pos);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+<h2 id="データの検索"><a href="#データの検索" class="headerlink" title="データの検索"></a>データの検索</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">LTNode* <span class="title function_">ListFind</span><span class="params">(LTNode* phead, LTDataType x)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(phead);</span><br><span class="line">	LTNode* cur = phead-&gt;_next;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">while</span> (cur != phead)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (cur-&gt;_data == x) </span><br><span class="line">			<span class="keyword">return</span> cur; <span class="comment">// それを見つけた</span></span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			cur = cur-&gt;_next;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="literal">NULL</span>; <span class="comment">// 見つけていない</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+<h2 id="双方向循環リストの破壊"><a href="#双方向循環リストの破壊" class="headerlink" title="双方向循環リストの破壊"></a>双方向循環リストの破壊</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">ListDestory</span><span class="params">(LTNode* phead)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(phead);</span><br><span class="line">	LTNode* cur = phead-&gt;_next;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">while</span> (cur != phead) <span class="comment">// phead だけ残ったら終了</span></span><br><span class="line">	&#123;</span><br><span class="line">		LTNode* next = cur-&gt;_next; <span class="comment">//　ループ内のすべてのノードを解放する</span></span><br><span class="line">		<span class="built_in">free</span>(cur);</span><br><span class="line">		cur = next;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="built_in">free</span>(phead);</span><br><span class="line">	phead = <span class="literal">NULL</span>;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;破壊成功\n&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h1 id="配列とリストの違い点"><a href="#配列とリストの違い点" class="headerlink" title="配列とリストの違い点"></a>配列とリストの違い点</h1><table>
+<thead>
+<tr>
+<th align="left">違い点</th>
+<th align="left">配列</th>
+<th align="center">リスト</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">空間</td>
+<td align="left">物理的に必ず連続している</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="left">動作時間</td>
+<td align="left">O(1)</td>
+<td align="center">O(N)</td>
+</tr>
+<tr>
+<td align="left">要素を任意の位置に挿入または削除する</td>
+<td align="left">要素を移動する必要がある場合があり、効率が低い O(N)</td>
+<td align="center">指すようにポインターを変更するだけ</td>
+</tr>
+<tr>
+<td align="left">挿入</td>
+<td align="left">動的配列、スペースが足りない場合は拡張する必要がある</td>
+<td align="center">容量の概念がない</td>
+</tr>
+<tr>
+<td align="left">適用シナリオ</td>
+<td align="left">エレメントの効率的な保管 + 頻繁なアクセス</td>
+<td align="center">任意の位置での頻繁な挿入と削除</td>
+</tr>
+<tr>
+<td align="left">キャッシュ使用率</td>
+<td align="left">高い</td>
+<td align="center">低い</td>
+</tr>
+</tbody></table>
+<br>
+
+
+<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><ul>
+<li><a href="https://github.com/soukenki/Test_for_C/tree/master/test_list2">https://github.com/soukenki/Test_for_C/tree/master/test_list2</a></li>
 </ul>
 ]]></content>
       <categories>
@@ -660,254 +1053,6 @@
 
 <h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><ul>
 <li><a href="https://github.com/soukenki/Test_for_C/tree/master/SeqList">https://github.com/soukenki/Test_for_C/tree/master/SeqList</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>データ構造とアルゴリズム</category>
-      </categories>
-      <tags>
-        <tag>C言語</tag>
-        <tag>データ構造とアルゴリズム</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>データ構造-双方向循環リスト番兵ノードつけ</title>
-    <url>/2022/12/30/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E5%8F%8C%E6%96%B9%E5%90%91%E5%BE%AA%E7%92%B0%E3%83%AA%E3%82%B9%E3%83%88%E7%95%AA%E5%85%B5%E3%83%8E%E3%83%BC%E3%83%89%E3%81%A4%E3%81%91/</url>
-    <content><![CDATA[<p><img src="/images/SSS/SSS03001.png" alt="結果"><br><strong>本文章については</strong>、Cプログラミングで双方向循環リストを実現し、また番兵ノードもつける。双方向循環リストにおける概念や運用などを明らかに述べることである。</p>
-<span id="more"></span>
-
-<p><strong>目次 &gt;</strong></p>
-<ul>
-<li>概念と構造</li>
-<li>双方向循環リストの実現<ul>
-<li>動的ようにノードを生成</li>
-<li>出力関数（テスト用）</li>
-<li>尾にデータを挿入</li>
-<li>ヘッドにデータを挿入</li>
-<li>尾にデータを削除</li>
-<li>ヘッドにデータを削除</li>
-<li>pos位置の後ろにデータを挿入</li>
-<li>pos位置の後ろにデータを削除</li>
-<li>データの検索</li>
-<li>双方向循環リストの破壊</li>
-</ul>
-</li>
-<li>単方向リストとの違い点<ul>
-<li>メリット</li>
-<li>デメリット</li>
-</ul>
-</li>
-</ul>
-<br>
-
-<h1 id="概念と構造"><a href="#概念と構造" class="headerlink" title="概念と構造"></a>概念と構造</h1><p>双方向循環リスト番兵ノードつけ: 構造は単方向リストよりも複雑で、通常はデータを個別に格納するために使用されます。 実際に使用される連結リストのデータ構造は、リードを持つ双方向の循環連結リストです。 さらに、構造は複雑ですが、コードを使用して実装すると、構造が多くの利点をもたらし、実装が簡単であることがわかります。後でコードを実装するときにご覧ください。  </p>
-<ul>
-<li><p>双方向循環リスト番兵ノードつけ<br><img src="/images/SSS/SSS03001.png" alt="結果"></p>
-</li>
-<li><p>ノードの本体<br><img src="/images/SSS/SSS03002.png" alt="結果"></p>
-</li>
-<li><p>ノードなしの時<br><img src="/images/SSS/SSS03003.png" alt="結果"></p>
-</li>
-</ul>
-<br>
-
-<h1 id="双方向循環リストの実現"><a href="#双方向循環リストの実現" class="headerlink" title="双方向循環リストの実現"></a>双方向循環リストの実現</h1><p>返されたリンク リストのヘッド ノードを作成する。(連結リストの初期化)</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">LTNode* <span class="title function_">ListInit</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">	LTNode* phead = BuyListNode(<span class="number">-1</span>); <span class="comment">//　ヘッドノードに　-1　を入れる</span></span><br><span class="line">	phead-&gt;_prev = phead; <span class="comment">//　すべてが番兵ノードの自分自身を指している</span></span><br><span class="line">	phead-&gt;_next = phead;</span><br><span class="line">	<span class="keyword">return</span> phead;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<br>
-
-
-<h2 id="動的ようにノードを生成"><a href="#動的ようにノードを生成" class="headerlink" title="動的ようにノードを生成"></a>動的ようにノードを生成</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">LTNode* <span class="title function_">BuyListNode</span><span class="params">(LTDataType x)</span></span><br><span class="line">&#123;</span><br><span class="line">	LTNode* node = (LTNode*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(LTNode));</span><br><span class="line">	<span class="keyword">if</span> (node == <span class="literal">NULL</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;malloc fail\n&quot;</span>);</span><br><span class="line">		<span class="built_in">exit</span>(<span class="number">-1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	node-&gt;_data = x;</span><br><span class="line">	node-&gt;_next = <span class="literal">NULL</span>;</span><br><span class="line">	node-&gt;_prev = <span class="literal">NULL</span>;</span><br><span class="line">	<span class="keyword">return</span> node;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<br>
-
-
-<h2 id="出力関数（テスト用）"><a href="#出力関数（テスト用）" class="headerlink" title="出力関数（テスト用）"></a>出力関数（テスト用）</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">ListPrint</span><span class="params">(LTNode* phead)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(phead);</span><br><span class="line"></span><br><span class="line">	LTNode* cur = phead-&gt;_next;</span><br><span class="line">	<span class="keyword">while</span> (cur != phead)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, cur-&gt;_data);</span><br><span class="line">		cur = cur-&gt;_next;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<br>
-
-
-<h2 id="尾にデータを挿入"><a href="#尾にデータを挿入" class="headerlink" title="尾にデータを挿入"></a>尾にデータを挿入</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">ListPushBack</span><span class="params">(LTNode* phead, LTDataType x)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(phead);</span><br><span class="line">	ListInsert(phead, x);　<span class="comment">//　再利用</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//LTNode* newnode = BuyListNode(x);</span></span><br><span class="line">	<span class="comment">//LTNode* tail = phead-&gt;_prev;</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//tail-&gt;_next = newnode;</span></span><br><span class="line">	<span class="comment">//newnode-&gt;_prev = tail;</span></span><br><span class="line">	<span class="comment">//newnode-&gt;_next = phead;</span></span><br><span class="line">	<span class="comment">//phead-&gt;_prev = newnode;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<br>
-
-
-<h2 id="ヘッドにデータを挿入"><a href="#ヘッドにデータを挿入" class="headerlink" title="ヘッドにデータを挿入"></a>ヘッドにデータを挿入</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">ListPushFront</span><span class="params">(LTNode* phead, LTDataType x)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(phead);</span><br><span class="line">	ListInsert(phead-&gt;_next, x); <span class="comment">//　再利用</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//LTNode* newnode = BuyListNode(x);</span></span><br><span class="line">	<span class="comment">//LTNode* next = phead-&gt;_next;</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//phead-&gt;_next = newnode;</span></span><br><span class="line">	<span class="comment">//newnode-&gt;_next = next;</span></span><br><span class="line">	<span class="comment">//next-&gt;_prev = newnode;</span></span><br><span class="line">	<span class="comment">//newnode-&gt;_prev = phead;</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<br>
-
-
-<h2 id="尾にデータを削除"><a href="#尾にデータを削除" class="headerlink" title="尾にデータを削除"></a>尾にデータを削除</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">ListPopBack</span><span class="params">(LTNode* phead)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(phead);</span><br><span class="line">	assert(!ListEmpty(phead)); <span class="comment">//　リストが空でない場合にしか続行しない</span></span><br><span class="line"></span><br><span class="line">	ListErase(phead-&gt;_prev);</span><br><span class="line"></span><br><span class="line">	<span class="comment">//LTNode* tail = phead-&gt;_prev;</span></span><br><span class="line">	<span class="comment">//LTNode* tailPrev = tail-&gt;_prev;</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//free(tail);</span></span><br><span class="line">	<span class="comment">//tailPrev-&gt;_next = phead;</span></span><br><span class="line">	<span class="comment">//phead-&gt;_prev = tailPrev;</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<br>
-
-
-<h2 id="ヘッドにデータを削除"><a href="#ヘッドにデータを削除" class="headerlink" title="ヘッドにデータを削除"></a>ヘッドにデータを削除</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">ListPopFront</span><span class="params">(LTNode* phead)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(phead);</span><br><span class="line">	assert(!ListEmpty(phead));<span class="comment">//　リストが空でない場合にしか続行しない</span></span><br><span class="line">	ListErase(phead-&gt;_next); <span class="comment">//　再利用</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<br>
-
-
-<h2 id="pos位置の前にデータを挿入"><a href="#pos位置の前にデータを挿入" class="headerlink" title="pos位置の前にデータを挿入"></a>pos位置の前にデータを挿入</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">ListInsert</span><span class="params">(LTNode* pos, LTDataType x)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(pos);</span><br><span class="line">	LTNode* prev = pos-&gt;_prev;</span><br><span class="line">	LTNode* newnode = BuyListNode(x);</span><br><span class="line"></span><br><span class="line">	prev-&gt;_next = newnode;</span><br><span class="line">	newnode-&gt;_prev = prev;</span><br><span class="line">	newnode-&gt;_next = pos;</span><br><span class="line">	pos-&gt;_prev = newnode;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<br>
-
-
-<h2 id="pos位置にデータを削除"><a href="#pos位置にデータを削除" class="headerlink" title="pos位置にデータを削除"></a>pos位置にデータを削除</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">ListErase</span><span class="params">(LTNode* pos)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(pos);</span><br><span class="line">	LTNode* prve = pos-&gt;_prev;</span><br><span class="line">	LTNode* next = pos-&gt;_next;</span><br><span class="line"></span><br><span class="line">	prve-&gt;_next = next;</span><br><span class="line">	next-&gt;_prev = prve;</span><br><span class="line">	<span class="built_in">free</span>(pos);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<br>
-
-
-<h2 id="データの検索"><a href="#データの検索" class="headerlink" title="データの検索"></a>データの検索</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">LTNode* <span class="title function_">ListFind</span><span class="params">(LTNode* phead, LTDataType x)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(phead);</span><br><span class="line">	LTNode* cur = phead-&gt;_next;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">while</span> (cur != phead)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (cur-&gt;_data == x) </span><br><span class="line">			<span class="keyword">return</span> cur; <span class="comment">// それを見つけた</span></span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			cur = cur-&gt;_next;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="literal">NULL</span>; <span class="comment">// 見つけていない</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<br>
-
-
-<h2 id="双方向循環リストの破壊"><a href="#双方向循環リストの破壊" class="headerlink" title="双方向循環リストの破壊"></a>双方向循環リストの破壊</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">ListDestory</span><span class="params">(LTNode* phead)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(phead);</span><br><span class="line">	LTNode* cur = phead-&gt;_next;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">while</span> (cur != phead) <span class="comment">// phead だけ残ったら終了</span></span><br><span class="line">	&#123;</span><br><span class="line">		LTNode* next = cur-&gt;_next; <span class="comment">//　ループ内のすべてのノードを解放する</span></span><br><span class="line">		<span class="built_in">free</span>(cur);</span><br><span class="line">		cur = next;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="built_in">free</span>(phead);</span><br><span class="line">	phead = <span class="literal">NULL</span>;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;破壊成功\n&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<br>
-
-<h1 id="単方向リストとの違い点"><a href="#単方向リストとの違い点" class="headerlink" title="単方向リストとの違い点"></a>単方向リストとの違い点</h1><br>
-
-<h2 id="メリット"><a href="#メリット" class="headerlink" title="メリット"></a>メリット</h2><br>
-
-<h2 id="デメリット"><a href="#デメリット" class="headerlink" title="デメリット"></a>デメリット</h2><br>
-
-
-<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><ul>
-<li><a href="https://github.com/soukenki/Test_for_C/tree/master/test_list2">https://github.com/soukenki/Test_for_C/tree/master/test_list2</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>データ構造とアルゴリズム</category>
-      </categories>
-      <tags>
-        <tag>C言語</tag>
-        <tag>データ構造とアルゴリズム</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>データ構造-スタック</title>
-    <url>/2023/01/18/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E3%82%B9%E3%82%BF%E3%83%83%E3%82%AF/</url>
-    <content><![CDATA[<p><img src="/images/SSS/SSS04001.png" alt="概念"></p>
-<p><strong>本文章については</strong>、Cプログラミングでスタックを実現し、スタックにおける概念などを明らかに述べることである。</p>
-<span id="more"></span>
-
-<p><strong>目次 &gt;</strong></p>
-<ul>
-<li>概念と構造</li>
-<li>スタックの実現<ul>
-<li>初期化</li>
-<li>データを挿入</li>
-<li>データを削除</li>
-<li>トップデータを取得</li>
-<li>データがあるかどうかを判断する</li>
-<li>スタック内のデータ数を取得</li>
-<li>スタックの破壊</li>
-</ul>
-</li>
-</ul>
-<br>
-
-<h1 id="概念と構造"><a href="#概念と構造" class="headerlink" title="概念と構造"></a>概念と構造</h1><p><img src="/images/SSS/SSS04001.png" alt="概念"><br>スタックとは、データ構造の一つであるリストの中で、特に挿入、削除がリストの先頭からしかできないものである。このような構造は、LIFO (Last In First Out 後入れ先出し）と呼ばれる。</p>
-<p>スタックは、例で言えば、机上に積み上げられた本のような構造をしている。本は上に積み上げられていき、読みたい本は上から順に取っていかなければ取れないという点が、スタックと似ている。</p>
-<br>
-
-<h1 id="スタックの実現"><a href="#スタックの実現" class="headerlink" title="スタックの実現"></a>スタックの実現</h1><p>スタックの実装は、一般的には配列や連結リストを使って実装できますが、相対的に言えば、配列の構造の方が優れています。 配列の最後にデータを挿入するコストは比較的小さいためです。</p>
-<p>Stackの構造：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">// スタック構造 (動的)</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">int</span> STDataType;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">Stack</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">	STDataType* _a;</span><br><span class="line">	<span class="type">int</span> _top;      <span class="comment">// トップ</span></span><br><span class="line">	<span class="type">int</span> _capacity;   <span class="comment">// 容量</span></span><br><span class="line">&#125;ST;</span><br></pre></td></tr></table></figure>
-<br>
-
-<h2 id="初期化"><a href="#初期化" class="headerlink" title="初期化"></a>初期化</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">StackInit</span><span class="params">(ST* ps)</span> <span class="comment">// 初期化</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(ps);</span><br><span class="line">	ps-&gt;_a = <span class="literal">NULL</span>;</span><br><span class="line">	ps-&gt;_top = <span class="number">0</span>;</span><br><span class="line">	ps-&gt;_capacity = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<br>
-
-<h2 id="データを挿入"><a href="#データを挿入" class="headerlink" title="データを挿入"></a>データを挿入</h2><p><img src="/images/SSS/SSS04002.png" alt="概念"></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">StackPush</span><span class="params">(ST* ps, STDataType x)</span> <span class="comment">// 挿入</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(ps);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span> (ps-&gt;_top == ps-&gt;_capacity)  <span class="comment">// 容量を拡大</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> newCapacity = ps-&gt;_capacity == <span class="number">0</span> ? <span class="number">4</span> : ps-&gt;_capacity * <span class="number">2</span>;</span><br><span class="line">		STDataType* tmp = (STDataType*)<span class="built_in">realloc</span>(ps-&gt;_a, <span class="keyword">sizeof</span>(STDataType) * newCapacity);</span><br><span class="line">		<span class="keyword">if</span> (tmp == <span class="literal">NULL</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">&quot;realloc fail\n&quot;</span>);</span><br><span class="line">			<span class="built_in">exit</span>(<span class="number">-1</span>);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		ps-&gt;_a = tmp;</span><br><span class="line">		ps-&gt;_capacity = newCapacity;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	ps-&gt;_a[ps-&gt;_top] = x;</span><br><span class="line">	ps-&gt;_top++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<br>
-
-<h2 id="データを削除"><a href="#データを削除" class="headerlink" title="データを削除"></a>データを削除</h2><p><img src="/images/SSS/SSS04003.png" alt="概念"></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">StackPop</span><span class="params">(ST* ps)</span>  <span class="comment">//　消去</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(ps);</span><br><span class="line">	assert(!StackEmpty(ps));</span><br><span class="line">	ps-&gt;_top--;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<br>
-
-<h2 id="トップデータを取得"><a href="#トップデータを取得" class="headerlink" title="トップデータを取得"></a>トップデータを取得</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">STDataType <span class="title function_">StackTop</span><span class="params">(ST* ps)</span> <span class="comment">//　トップデータを取得</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(ps);</span><br><span class="line">	assert(!StackEmpty(ps));</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> ps-&gt;_a[ps-&gt;_top - <span class="number">1</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<br>
-
-<h2 id="データがあるかどうかを判断する"><a href="#データがあるかどうかを判断する" class="headerlink" title="データがあるかどうかを判断する"></a>データがあるかどうかを判断する</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">bool</span> <span class="title function_">StackEmpty</span><span class="params">(ST* ps)</span> </span><br><span class="line">&#123;</span><br><span class="line">	assert(ps);</span><br><span class="line">	<span class="keyword">return</span> ps-&gt;_top == <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<br>
-
-<h2 id="スタック内のデータ数を取得"><a href="#スタック内のデータ数を取得" class="headerlink" title="スタック内のデータ数を取得"></a>スタック内のデータ数を取得</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">StackSize</span><span class="params">(ST* ps)</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(ps);</span><br><span class="line">	<span class="keyword">return</span> ps-&gt;_top;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<br>
-
-<h2 id="スタックの破壊"><a href="#スタックの破壊" class="headerlink" title="スタックの破壊"></a>スタックの破壊</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">StackDestory</span><span class="params">(ST* ps)</span> <span class="comment">//　破壊</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(ps);</span><br><span class="line">	<span class="built_in">free</span>(ps-&gt;_a);</span><br><span class="line">	ps-&gt;_a = <span class="literal">NULL</span>;</span><br><span class="line">	ps-&gt;_top = <span class="number">0</span>;</span><br><span class="line">	ps-&gt;_capacity = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<br>
-
-
-<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><ul>
-<li><a href="https://github.com/soukenki/Test_for_C/tree/master/Stack">https://github.com/soukenki/Test_for_C/tree/master/Stack</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>データ構造とアルゴリズム</category>
-      </categories>
-      <tags>
-        <tag>C言語</tag>
-        <tag>データ構造とアルゴリズム</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>データ構造-キュー</title>
-    <url>/2023/01/18/%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0-%E3%82%AD%E3%83%A5%E3%83%BC/</url>
-    <content><![CDATA[<p><img src="/images/SSS/SSS05001.png" alt="概念"><br><strong>本文章については</strong>、、Cプログラミングでキューを実現し、キューにおける概念などを明らかに述べることである。</p>
-<span id="more"></span>
-
-<p><strong>目次 &gt;</strong></p>
-<ul>
-<li>概念と構造</li>
-<li>キューの実現<ul>
-<li>初期化</li>
-<li>データを挿入</li>
-<li>データを削除</li>
-<li>ヘッドデータを取得</li>
-<li>尾データを取得</li>
-<li>データがあるかどうかを判断する</li>
-<li>キュー内のデータ数を取得</li>
-<li>キューの破壊</li>
-</ul>
-</li>
-</ul>
-<br>
-
-
-<h1 id="概念と構造"><a href="#概念と構造" class="headerlink" title="概念と構造"></a>概念と構造</h1><p><img src="/images/SSS/SSS05001.png" alt="概念"><br>キューとは、先頭が常に最も古い要素になるデータ構造で、新しい要素は必ず末尾に追加される。取り出すときは常に先頭の最も古い要素から取り出される。このように先に入れたものほど先に取り出される管理方式を「FIFO」（First-In First-Out&#x2F;先入れ先出し）という。</p>
-<p>具体例なイメージは、人の行列を思い出してみてください</p>
-<p>例えば、ディズニーランドでアトラクションを待っているとき、先に列に並んでいる人から、アトラクションに案内されますね</p>
-<ul>
-<li>ノードの接続・ノードの本体<br><img src="/images/SSS/SSS05002.png" alt="概念"><br></li>
-</ul>
-<h1 id="キューの実現"><a href="#キューの実現" class="headerlink" title="キューの実現"></a>キューの実現</h1><p>ノードの本体：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">//队列结构</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">int</span> QDataType;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">QueueNode</span> // ノード</span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">QueueNode</span>* _<span class="title">next</span>;</span></span><br><span class="line">	QDataType _data;</span><br><span class="line">&#125;QNode;</span><br></pre></td></tr></table></figure>
-<p>Queueの構造：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">Queue</span>  //　構造の入れ子</span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">	<span class="comment">//int size; //　ここでsizeを作成してサイズを記録することもできる</span></span><br><span class="line">	QNode* _head;</span><br><span class="line">	QNode* _tail;</span><br><span class="line">&#125;Queue;</span><br></pre></td></tr></table></figure>
-<br>
-
-<h2 id="初期化"><a href="#初期化" class="headerlink" title="初期化"></a>初期化</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">QueueInit</span><span class="params">(Queue* pq)</span>  <span class="comment">//　初期化</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(pq);</span><br><span class="line">	pq-&gt;_head = pq-&gt;_tail = <span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<br>
-
-<h2 id="データを挿入"><a href="#データを挿入" class="headerlink" title="データを挿入"></a>データを挿入</h2><p><img src="/images/SSS/SSS05003.png" alt="概念"></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">QueuePush</span><span class="params">(Queue* pq, QDataType x)</span> <span class="comment">// 挿入</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(pq);</span><br><span class="line">	QNode* newnode = (QNode*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(QNode)); <span class="comment">// 新しいノードを作成する</span></span><br><span class="line">	<span class="keyword">if</span> (newnode == <span class="literal">NULL</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;malloc fail\n&quot;</span>);</span><br><span class="line">		<span class="built_in">exit</span>(<span class="number">-1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	newnode-&gt;_data = x;</span><br><span class="line">	newnode-&gt;_next = <span class="literal">NULL</span>;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//　挿入</span></span><br><span class="line">	<span class="keyword">if</span> (pq-&gt;_tail == <span class="literal">NULL</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		pq-&gt;_head = pq-&gt;_tail = newnode; </span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		pq-&gt;_tail-&gt;_next = newnode;</span><br><span class="line">		pq-&gt;_tail = newnode;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<br>
-
-<h2 id="データを削除"><a href="#データを削除" class="headerlink" title="データを削除"></a>データを削除</h2><p><img src="/images/SSS/SSS05004.png" alt="概念"></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">QueuePop</span><span class="params">(Queue* pq)</span>  <span class="comment">// 削除</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(pq);</span><br><span class="line">	assert(!QueueEmpty(pq));</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span> (pq-&gt;_head-&gt;_next == <span class="literal">NULL</span>) <span class="comment">// 最後のノードが残っているとき</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">free</span>(pq-&gt;_head);</span><br><span class="line">		pq-&gt;_head = pq-&gt;_tail = <span class="literal">NULL</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span>  <span class="comment">// ノードが複数ある場合</span></span><br><span class="line">	&#123;</span><br><span class="line">		Queue* next = pq-&gt;_head-&gt;_next;</span><br><span class="line">		<span class="built_in">free</span>(pq-&gt;_head);</span><br><span class="line">		pq-&gt;_head = next;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<br>
-
-<h2 id="ヘッドデータを取得"><a href="#ヘッドデータを取得" class="headerlink" title="ヘッドデータを取得"></a>ヘッドデータを取得</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">QDataType <span class="title function_">QueueFront</span><span class="params">(Queue* pq)</span>  <span class="comment">// headデータを取得</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(pq);</span><br><span class="line">	assert(!QueueEmpty(pq));</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> pq-&gt;_head-&gt;_data;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<br>
-
-<h2 id="尾データを取得"><a href="#尾データを取得" class="headerlink" title="尾データを取得"></a>尾データを取得</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">QDataType <span class="title function_">QueueBack</span><span class="params">(Queue* pq)</span>  <span class="comment">//  tailデータを取得</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(pq);</span><br><span class="line">	assert(!QueueEmpty(pq));</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> pq-&gt;_tail-&gt;_data;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<br>
-
-<h2 id="データがあるかどうかを判断する"><a href="#データがあるかどうかを判断する" class="headerlink" title="データがあるかどうかを判断する"></a>データがあるかどうかを判断する</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">bool</span> <span class="title function_">QueueEmpty</span><span class="params">(Queue* pq)</span>  <span class="comment">// 空であろうか</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(pq);</span><br><span class="line">	<span class="keyword">return</span> pq-&gt;_head == <span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<br>
-
-<h2 id="キュー内のデータ数を取得"><a href="#キュー内のデータ数を取得" class="headerlink" title="キュー内のデータ数を取得"></a>キュー内のデータ数を取得</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">QueueSize</span><span class="params">(Queue* pq)</span> <span class="comment">//　size</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(pq);</span><br><span class="line">	QNode* cur = pq-&gt;_head;</span><br><span class="line">	<span class="type">int</span> size = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span> (cur)</span><br><span class="line">	&#123;</span><br><span class="line">		++size;</span><br><span class="line">		cur = cur-&gt;_next;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> size;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<br>
-
-<h2 id="キューの破壊"><a href="#キューの破壊" class="headerlink" title="キューの破壊"></a>キューの破壊</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">QueueDestroy</span><span class="params">(Queue* pq)</span>  <span class="comment">// 破壊</span></span><br><span class="line">&#123;</span><br><span class="line">	assert(pq);</span><br><span class="line">	QNode* cur = pq-&gt;_head;</span><br><span class="line">	<span class="keyword">while</span> (cur)</span><br><span class="line">	&#123;</span><br><span class="line">		QNode* next = cur-&gt;_next;</span><br><span class="line">		<span class="built_in">free</span>(cur);</span><br><span class="line">		cur = next;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	pq-&gt;_head = pq-&gt;_tail = <span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<br>
-
-
-
-<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><ul>
-<li><a href="https://github.com/soukenki/Test_for_C/tree/master/Queue">https://github.com/soukenki/Test_for_C/tree/master/Queue</a></li>
 </ul>
 ]]></content>
       <categories>
